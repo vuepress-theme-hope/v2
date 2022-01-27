@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/v2/md-enhance/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Thu, 27 Jan 2022 15:56:49 GMT</pubDate>
-    <lastBuildDate>Thu, 27 Jan 2022 15:56:49 GMT</lastBuildDate>
+    <pubDate>Thu, 27 Jan 2022 16:57:48 GMT</pubDate>
+    <lastBuildDate>Thu, 27 Jan 2022 16:57:48 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Markdown</category>
@@ -581,6 +581,16 @@ If you meet a bug during usage, you can
 <details><summary>custom title</summary>
 <p>A custom details container</p>
 </details>
+<div><p>Custom info</p>
+</div>
+<div><p>Custom note</p>
+</div>
+<div><p>Custom tip</p>
+</div>
+<div><p>Custom warning</p>
+</div>
+<div><p>Custom danger</p>
+</div>
 <div><pre><code>::: info
 Information container
 :::
@@ -628,7 +638,22 @@ A custom danger container
 ::: details custom title
 A custom details container
 :::
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br></div></div>]]></content:encoded>
+
+::: info Custom info
+:::
+
+::: note Custom note
+:::
+
+::: tip Custom tip
+:::
+
+::: warning Custom warning
+:::
+
+::: danger Custom danger
+:::
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br><span>53</span><br><span>54</span><br><span>55</span><br><span>56</span><br><span>57</span><br><span>58</span><br><span>59</span><br><span>60</span><br><span>61</span><br><span>62</span><br></div></div>]]></content:encoded>
     </item>
     <item>
       <title>Flowchart</title>
@@ -2689,6 +2714,16 @@ vuepress-theme-hope v2 仍在制作中，API 可能会有
 <details><summary>自定义标题</summary>
 <p>详情容器</p>
 </details>
+<div><p>自定义信息</p>
+</div>
+<div><p>自定义注释</p>
+</div>
+<div><p>自定义提示</p>
+</div>
+<div><p>自定义警告</p>
+</div>
+<div><p>自定义危险</p>
+</div>
 <div><pre><code>::: info
 信息容器。
 :::
@@ -2736,7 +2771,22 @@ vuepress-theme-hope v2 仍在制作中，API 可能会有
 ::: details 自定义标题
 详情容器
 :::
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br></div></div>]]></content:encoded>
+
+::: info 自定义信息
+:::
+
+::: note 自定义注释
+:::
+
+::: tip 自定义提示
+:::
+
+::: warning 自定义警告
+:::
+
+::: danger 自定义危险
+:::
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br><span>53</span><br><span>54</span><br><span>55</span><br><span>56</span><br><span>57</span><br><span>58</span><br><span>59</span><br><span>60</span><br><span>61</span><br><span>62</span><br></div></div>]]></content:encoded>
     </item>
     <item>
       <title>流程图</title>
