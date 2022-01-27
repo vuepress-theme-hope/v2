@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
   <id>https://vuepress-theme-hope.github.io/v2/photo-swipe/</id>
   <title/>
-  <updated>2022-01-27T13:39:46.839Z</updated>
+  <updated>2022-01-27T14:19:38.152Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/v2/photo-swipe/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/v2/photo-swipe/"/>
@@ -10,7 +10,7 @@
     <title type="html">Home</title>
     <id>https://vuepress-theme-hope.github.io/v2/photo-swipe/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/photo-swipe/"/>
-    <updated>2022-01-27T13:41:31.377Z</updated>
+    <updated>2022-01-27T14:21:32.168Z</updated>
     <content type="html"><![CDATA[<p>Let your images support preview, zoom, share, swipe view and download.</p>
 <h2 id="how-to-use" tabindex="-1"> How to use</h2>
 <h3 id="install" tabindex="-1"> Install</h3>
@@ -55,7 +55,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Plugin options</title>
     <id>https://vuepress-theme-hope.github.io/v2/photo-swipe/config.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/photo-swipe/config.html"/>
-    <updated>2022-01-27T13:41:31.507Z</updated>
+    <updated>2022-01-27T14:21:32.310Z</updated>
     <content type="html"><![CDATA[<h2 id="selector" tabindex="-1"> selector</h2>
 <ul>
 <li>Type: <code>string</code></li>
@@ -117,7 +117,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Guide</title>
     <id>https://vuepress-theme-hope.github.io/v2/photo-swipe/guide.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/photo-swipe/guide.html"/>
-    <updated>2022-01-27T13:41:31.508Z</updated>
+    <updated>2022-01-27T14:21:32.327Z</updated>
     <summary type="html"><![CDATA[<p>This plugin will make the pictures in the body of the page enter the preview mode when clicked.</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>This plugin will make the pictures in the body of the page enter the preview mode when clicked.</p>
@@ -148,7 +148,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">主页</title>
     <id>https://vuepress-theme-hope.github.io/v2/photo-swipe/zh/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/photo-swipe/zh/"/>
-    <updated>2022-01-27T13:41:31.508Z</updated>
+    <updated>2022-01-27T14:21:32.327Z</updated>
     <content type="html"><![CDATA[<p>让页面图像支持预览，缩放，共享，滑动查看和下载。</p>
 <h2 id="使用插件" tabindex="-1"> 使用插件</h2>
 <h3 id="安装" tabindex="-1"> 安装</h3>
@@ -193,7 +193,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">插件选项</title>
     <id>https://vuepress-theme-hope.github.io/v2/photo-swipe/zh/config.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/photo-swipe/zh/config.html"/>
-    <updated>2022-01-27T13:41:31.508Z</updated>
+    <updated>2022-01-27T14:21:32.328Z</updated>
     <content type="html"><![CDATA[<h2 id="selector" tabindex="-1"> selector</h2>
 <ul>
 <li>类型: <code>string</code></li>
@@ -255,7 +255,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">指南</title>
     <id>https://vuepress-theme-hope.github.io/v2/photo-swipe/zh/guide.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/photo-swipe/zh/guide.html"/>
-    <updated>2022-01-27T13:41:31.509Z</updated>
+    <updated>2022-01-27T14:21:32.328Z</updated>
     <summary type="html"><![CDATA[<p>此插件会使页面正文内的图片在点击时进入浏览模式浏览。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>此插件会使页面正文内的图片在点击时进入浏览模式浏览。</p>
