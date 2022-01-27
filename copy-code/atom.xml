@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+  <id>https://vuepress-theme-hope.github.io/v2/copy-code/</id>
+  <title/>
+  <updated>2022-01-27T08:51:23.271Z</updated>
+  <generator>vuepress-plugin-feed2</generator>
+  <link rel="self" href="https://vuepress-theme-hope.github.io/v2/copy-code/atom.xml"/>
+  <link rel="alternate" href="https://vuepress-theme-hope.github.io/v2/copy-code/"/>
+  <entry>
+    <title type="html">Home</title>
+    <id>https://vuepress-theme-hope.github.io/v2/copy-code/</id>
+    <link href="https://vuepress-theme-hope.github.io/v2/copy-code/"/>
+    <updated>2022-01-27T08:53:08.085Z</updated>
+    <content type="html"><![CDATA[<h2 id="how-to-use" tabindex="-1"> How to use</h2>
+<h3 id="install" tabindex="-1"> Install</h3>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-copy-code2@next
+</code></pre><div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D vuepress-plugin-copy-code2@next
+</code></pre><div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h3 id="usage" tabindex="-1"> Usage</h3>
+<CodeGroup>
+<CodeGroupItem title="ts">
+<div><pre><code><span>// .vuepress/config.ts</span>
+<span>import</span> <span>{</span> copyCode <span>}</span> <span>from</span> <span>"vuepress-plugin-copy-code2"</span><span>;</span>
+
+<span>export</span> <span>default</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>copyCode</span><span>(</span><span>{</span>
+      <span>// your options</span>
+    <span>}</span><span>)</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="js">
+<div><pre><code><span>// .vuepress/config.js</span>
+<span>const</span> <span>{</span> copyCode <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"vuepress-plugin-copy-code2"</span><span>)</span><span>;</span>
+
+module<span>.</span>exports <span>=</span> <span>{</span>
+  <span>plugins</span><span>:</span> <span>[</span>
+    <span>copyCode</span><span>(</span><span>{</span>
+      <span>// your options</span>
+    <span>}</span><span>)</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+]]></content>
+  </entry>
+  <entry>
+    <title type="html">Plugin Options</title>
+    <id>https://vuepress-theme-hope.github.io/v2/copy-code/config.html</id>
+    <link href="https://vuepress-theme-hope.github.io/v2/copy-code/config.html"/>
+    <updated>2022-01-27T08:53:08.198Z</updated>
+    <content type="html"><![CDATA[<h2 id="selector" tabindex="-1"> selector</h2>
+<ul>
+<li>Type: <code>string | string[]</code></li>
+<li>Default: <code>'.theme-default-content div[class*=&quot;language-&quot;] pre'</code></li>
+</ul>
+<p>Code block selector</p>
+<h2 id="duration" tabindex="-1"> duration</h2>
+<ul>
+<li>Type: <code>number</code></li>
+<li>Default: <code>2000</code></li>
+</ul>
+<p>Hint display time, setting it to <code>0</code> will disable the hint.</p>
+<h2 id="showinmobile" tabindex="-1"> showInMobile</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>false</code></li>
+</ul>
+<p>Whether to display copy button on the mobile device</p>
+<h2 id="locales" tabindex="-1"> locales</h2>
+<div><pre><code><span>interface</span> <span>CopyCodeLocaleData</span> <span>{</span>
+  <span>/**
+   * Copy button label text
+   */</span>
+  copy<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * Success message text after content is copied
+   */</span>
+  hint<span>:</span> <span>string</span><span>;</span>
+<span>}</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>Locales config.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title type="html">Guide</title>
+    <id>https://vuepress-theme-hope.github.io/v2/copy-code/guide.html</id>
+    <link href="https://vuepress-theme-hope.github.io/v2/copy-code/guide.html"/>
+    <updated>2022-01-27T08:53:08.198Z</updated>
+    <content type="html"><![CDATA[<h2 id="usage" tabindex="-1"> Usage</h2>
+<p>This plugin will add a copy button to the bottom right corner of each code block.</p>
+<p>By default, the button is only displayed on desktop mode. To display this button on mobile devices, set <code>showInMobile</code> to <code>true</code>.</p>
+<p>After user press the copy button, a success hint will display on the screen. The default hint duration is 2000ms, to change the duration, please set <code>duration</code> in options (ms). To disable the hint, set duration to <code>0</code>.</p>
+<h2 id="demo" tabindex="-1"> Demo</h2>
+<CodeGroup>
+<CodeGroupItem title="ts">
+<div><pre><code><span>// .vuepress/config.ts</span>
+<span>import</span> <span>{</span> copyCode <span>}</span> <span>from</span> <span>"vuepress-plugin-copy-code2"</span><span>;</span>
+
+<span>export</span> <span>default</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>copyCode</span><span>(</span><span>{</span>
+      <span>// your options</span>
+    <span>}</span><span>)</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="js">
+<div><pre><code><span>// .vuepress/config.js</span>
+<span>const</span> <span>{</span> copyCode <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"vuepress-plugin-copy-code2"</span><span>)</span><span>;</span>
+
+module<span>.</span>exports <span>=</span> <span>{</span>
+  <span>plugins</span><span>:</span> <span>[</span>
+    <span>copyCode</span><span>(</span><span>{</span>
+      <span>// your options</span>
+    <span>}</span><span>)</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+]]></content>
+  </entry>
+  <entry>
+    <title type="html">主页</title>
+    <id>https://vuepress-theme-hope.github.io/v2/copy-code/zh/</id>
+    <link href="https://vuepress-theme-hope.github.io/v2/copy-code/zh/"/>
+    <updated>2022-01-27T08:53:08.199Z</updated>
+    <content type="html"><![CDATA[<h2 id="使用插件" tabindex="-1"> 使用插件</h2>
+<h3 id="安装" tabindex="-1"> 安装</h3>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-copy-code2@next
+</code></pre><div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D vuepress-plugin-copy-code2@next
+</code></pre><div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h3 id="使用" tabindex="-1"> 使用</h3>
+<CodeGroup>
+<CodeGroupItem title="ts">
+<div><pre><code><span>// .vuepress/config.ts</span>
+<span>import</span> <span>{</span> copyCode <span>}</span> <span>from</span> <span>"vuepress-plugin-copy-code2"</span><span>;</span>
+
+<span>export</span> <span>default</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>copyCode</span><span>(</span><span>{</span>
+      <span>// 插件选项</span>
+    <span>}</span><span>)</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="js">
+<div><pre><code><span>// .vuepress/config.js</span>
+<span>const</span> <span>{</span> copyCode <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"vuepress-plugin-copy-code2"</span><span>)</span><span>;</span>
+
+module<span>.</span>exports <span>=</span> <span>{</span>
+  <span>plugins</span><span>:</span> <span>[</span>
+    <span>copyCode</span><span>(</span><span>{</span>
+      <span>// 插件选项</span>
+    <span>}</span><span>)</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+]]></content>
+  </entry>
+  <entry>
+    <title type="html">插件选项</title>
+    <id>https://vuepress-theme-hope.github.io/v2/copy-code/zh/config.html</id>
+    <link href="https://vuepress-theme-hope.github.io/v2/copy-code/zh/config.html"/>
+    <updated>2022-01-27T08:53:08.199Z</updated>
+    <content type="html"><![CDATA[<h2 id="selector" tabindex="-1"> selector</h2>
+<ul>
+<li>类型: <code>string | string[]</code></li>
+<li>默认值: <code>'.theme-default-content div[class*=&quot;language-&quot;] pre'</code></li>
+</ul>
+<p>代码块选择器</p>
+<h2 id="duration" tabindex="-1"> duration</h2>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: <code>2000</code></li>
+</ul>
+<p>提示消息显示时间，设置为 <code>0</code> 会禁用提示。</p>
+<h2 id="showinmobile" tabindex="-1"> showInMobile</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否展示在移动端</p>
+<h2 id="locales" tabindex="-1"> locales</h2>
+<div><pre><code><span>interface</span> <span>CopyCodeLocaleData</span> <span>{</span>
+  <span>/**
+   * 复制按钮文字
+   */</span>
+  copy<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * 复制成功提示消息文字
+   */</span>
+  hint<span>:</span> <span>string</span><span>;</span>
+<span>}</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>国际化配置</p>
+]]></content>
+  </entry>
+  <entry>
+    <title type="html">指南</title>
+    <id>https://vuepress-theme-hope.github.io/v2/copy-code/zh/guide.html</id>
+    <link href="https://vuepress-theme-hope.github.io/v2/copy-code/zh/guide.html"/>
+    <updated>2022-01-27T08:53:08.199Z</updated>
+    <content type="html"><![CDATA[<h2 id="使用" tabindex="-1"> 使用</h2>
+<p>此插件会自动添加复制按钮到每个代码块的右下角。</p>
+<p>默认情况下，按钮仅在桌面模式显示，如果你需要在移动端展示这个按钮，请将 <code>showInMobile</code> 设置为 <code>true</code>。</p>
+<p>在用户点击复制按钮后，屏幕上会显示一个复制成功的提示。默认的提示时长为 2000ms，如果你需要更改这个时长，请设置 <code>duration</code>(单位 ms)，如果你不需要这个提示，请将 <code>duration</code> 设置为 <code>0</code>。</p>
+<h2 id="演示" tabindex="-1"> 演示</h2>
+<CodeGroup>
+<CodeGroupItem title="ts">
+<div><pre><code><span>// .vuepress/config.ts</span>
+<span>import</span> <span>{</span> copyCode <span>}</span> <span>from</span> <span>"vuepress-plugin-copy-code2"</span><span>;</span>
+
+<span>export</span> <span>default</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>copyCode</span><span>(</span><span>{</span>
+      <span>// 插件选项</span>
+    <span>}</span><span>)</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="js">
+<div><pre><code><span>// .vuepress/config.js</span>
+<span>const</span> <span>{</span> copyCode <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"vuepress-plugin-copy-code2"</span><span>)</span><span>;</span>
+
+module<span>.</span>exports <span>=</span> <span>{</span>
+  <span>plugins</span><span>:</span> <span>[</span>
+    <span>copyCode</span><span>(</span><span>{</span>
+      <span>// 插件选项</span>
+    <span>}</span><span>)</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+]]></content>
+  </entry>
+</feed>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <atom:link href="https://vuepress-theme-hope.github.io/v2/photo-swipe/rss.xml" rel="self" type="application/rss+xml"/>
+    <title></title>
+    <link>https://vuepress-theme-hope.github.io/v2/photo-swipe/</link>
+    <description></description>
+    <language>en-US</language>
+    <pubDate>Thu, 27 Jan 2022 08:51:23 GMT</pubDate>
+    <lastBuildDate>Thu, 27 Jan 2022 08:51:23 GMT</lastBuildDate>
+    <generator>vuepress-plugin-feed2</generator>
+    <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <item>
+      <title>Home</title>
+      <link>https://vuepress-theme-hope.github.io/v2/photo-swipe/</link>
+      <guid>https://vuepress-theme-hope.github.io/v2/photo-swipe/</guid>
+      <source url="https://vuepress-theme-hope.github.io/v2/photo-swipe/rss.xml">Home</source>
+      <content:encoded><![CDATA[<p>Let your images support preview, zoom, share, swipe view and download.</p>
+<h2 id="how-to-use" tabindex="-1"> How to use</h2>
+<h3 id="install" tabindex="-1"> Install</h3>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-photo-swipe@next
+</code></pre><div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D vuepress-plugin-photo-swipe@next
+</code></pre><div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h3 id="usage" tabindex="-1"> Usage</h3>
+<CodeGroup>
+<CodeGroupItem title="ts">
+<div><pre><code><span>// .vuepress/config.ts</span>
+<span>import</span> <span>{</span> photoSwipe <span>}</span> <span>from</span> <span>"vuepress-plugin-photo-swipe"</span><span>;</span>
+
+<span>export</span> <span>default</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>photoSwipe</span><span>(</span><span>{</span>
+      <span>// your options</span>
+    <span>}</span><span>)</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="js">
+<div><pre><code><span>// .vuepress/config.js</span>
+<span>const</span> <span>{</span> photoSwipe <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"vuepress-plugin-photo-swipe"</span><span>)</span><span>;</span>
+
+module<span>.</span>exports <span>=</span> <span>{</span>
+  <span>plugins</span><span>:</span> <span>[</span>
+    <span>photoSwipe</span><span>(</span><span>{</span>
+      <span>// your options</span>
+    <span>}</span><span>)</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Plugin options</title>
+      <link>https://vuepress-theme-hope.github.io/v2/photo-swipe/config.html</link>
+      <guid>https://vuepress-theme-hope.github.io/v2/photo-swipe/config.html</guid>
+      <source url="https://vuepress-theme-hope.github.io/v2/photo-swipe/rss.xml">Plugin options</source>
+      <content:encoded><![CDATA[<h2 id="selector" tabindex="-1"> selector</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'.theme-default-content :not(a) &gt; img'</code></li>
+</ul>
+<p>Image selector</p>
+<h2 id="options" tabindex="-1"> options</h2>
+<p>Options passed to <a href="http://photoswipe.com/" target="_blank" rel="noopener noreferrer"><strong>photo-swipe</strong></a></p>
+<h2 id="delay" tabindex="-1"> delay</h2>
+<ul>
+<li>Type: <code>number</code></li>
+<li>Default: <code>500</code></li>
+</ul>
+<p>The delay of operating dom, in ms.</p>
+<div><p>Tips</p>
+<p>If the theme you are using has a switching animation, it is recommended to configure this option to <code>Switch animation duration + 200</code>.</p>
+</div>
+<h2 id="locales" tabindex="-1"> locales</h2>
+<div><pre><code><span>interface</span> <span>PhowoSwipeLocaleData</span> <span>{</span>
+  <span>/**
+   * Close button label text
+   */</span>
+  close<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * Full screen button label text
+   */</span>
+  fullscreen<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * Share button label text
+   */</span>
+  share<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * Zoom button label text
+   */</span>
+  zoom<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * Previous image button label text
+   */</span>
+  prev<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * Next image button label text
+   */</span>
+  next<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * Share button config
+   */</span>
+  buttons<span>:</span> PhotoSwipeDefaultUI<span>.</span>ShareButtonData<span>[</span><span>]</span><span>;</span>
+<span>}</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br></div></div><p>Locales config.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Guide</title>
+      <link>https://vuepress-theme-hope.github.io/v2/photo-swipe/guide.html</link>
+      <guid>https://vuepress-theme-hope.github.io/v2/photo-swipe/guide.html</guid>
+      <source url="https://vuepress-theme-hope.github.io/v2/photo-swipe/rss.xml">Guide</source>
+      <description>&amp;lt;p&amp;gt;This plugin will make the pictures in the body of the page enter the preview mode when clicked.&amp;lt;/p&amp;gt;
+</description>
+      <content:encoded><![CDATA[<p>This plugin will make the pictures in the body of the page enter the preview mode when clicked.</p>
+
+<h2 id="browse-mode" tabindex="-1"> Browse Mode</h2>
+<p>In preview mode, you can:</p>
+<ul>
+<li>Swipe left and right to preview other pictures on the page in order</li>
+<li>View the description of the picture</li>
+<li>Zoom in and zoom out the picture</li>
+<li>View pictures in full screen</li>
+<li>Download pictures</li>
+<li>Share pictures</li>
+</ul>
+<div><p>Tips</p>
+<ul>
+<li>Besides clicking &quot;×&quot; in the upper right corner to exit the preview mode, scrolling up and down more than a certain distance will also exit preview mode</li>
+<li>On cellphones, or using the PC trackpad, you can use pan and zoom gestures to pan and zoom in the preview mode</li>
+</ul>
+</div>
+<h2 id="demo" tabindex="-1"> Demo</h2>
+<p><img src="/logo.png" alt="Logo1">
+<img src="/logo.png" alt="Logo2">
+<img src="/logo.png" alt="Logo3"></p>
+]]></content:encoded>
+      <enclosure url="https://vuepress-theme-hope.github.io/v2/photo-swipe/logo.png" type="image/png"/>
+    </item>
+    <item>
+      <title>主页</title>
+      <link>https://vuepress-theme-hope.github.io/v2/photo-swipe/zh/</link>
+      <guid>https://vuepress-theme-hope.github.io/v2/photo-swipe/zh/</guid>
+      <source url="https://vuepress-theme-hope.github.io/v2/photo-swipe/rss.xml">主页</source>
+      <content:encoded><![CDATA[<p>让页面图像支持预览，缩放，共享，滑动查看和下载。</p>
+<h2 id="使用插件" tabindex="-1"> 使用插件</h2>
+<h3 id="安装" tabindex="-1"> 安装</h3>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-photo-swipe@next
+</code></pre><div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D vuepress-plugin-photo-swipe@next
+</code></pre><div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h3 id="使用" tabindex="-1"> 使用</h3>
+<CodeGroup>
+<CodeGroupItem title="ts">
+<div><pre><code><span>// .vuepress/config.ts</span>
+<span>import</span> <span>{</span> photoSwipe <span>}</span> <span>from</span> <span>"vuepress-plugin-photo-swipe"</span><span>;</span>
+
+<span>export</span> <span>default</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>photoSwipe</span><span>(</span><span>{</span>
+      <span>// 你的选项</span>
+    <span>}</span><span>)</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="js">
+<div><pre><code><span>// .vuepress/config.js</span>
+<span>const</span> <span>{</span> photoSwipe <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"vuepress-plugin-photo-swipe"</span><span>)</span><span>;</span>
+
+module<span>.</span>exports <span>=</span> <span>{</span>
+  <span>plugins</span><span>:</span> <span>[</span>
+    <span>photoSwipe</span><span>(</span><span>{</span>
+      <span>// 你的选项</span>
+    <span>}</span><span>)</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>插件选项</title>
+      <link>https://vuepress-theme-hope.github.io/v2/photo-swipe/zh/config.html</link>
+      <guid>https://vuepress-theme-hope.github.io/v2/photo-swipe/zh/config.html</guid>
+      <source url="https://vuepress-theme-hope.github.io/v2/photo-swipe/rss.xml">插件选项</source>
+      <content:encoded><![CDATA[<h2 id="selector" tabindex="-1"> selector</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>'.theme-default-content :not(a) &gt; img'</code></li>
+</ul>
+<p>图片选择器</p>
+<h2 id="options" tabindex="-1"> options</h2>
+<p>传递给 <a href="http://photoswipe.com/" target="_blank" rel="noopener noreferrer"><strong>photo-swipe</strong></a> 的额外选项</p>
+<h2 id="delay" tabindex="-1"> delay</h2>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: <code>500</code></li>
+</ul>
+<p>操作页面 DOM 的延时，单位 ms。</p>
+<div><p>提示</p>
+<p>如果你使用的主题有切换动画，建议配置此选项为 <code>切换动画时长 + 200</code>。</p>
+</div>
+<h2 id="locales" tabindex="-1"> locales</h2>
+<div><pre><code><span>interface</span> <span>PhowoSwipeLocaleData</span> <span>{</span>
+  <span>/**
+   * 关闭按钮标签文字
+   */</span>
+  close<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * 全屏按钮标签文字
+   */</span>
+  fullscreen<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * 分享按钮标签文字
+   */</span>
+  share<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * 缩放按钮标签文字
+   */</span>
+  zoom<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * 上一张图片按钮标签文字
+   */</span>
+  prev<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * 下一张图片按钮标签文字
+   */</span>
+  next<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * 功能按钮配置
+   */</span>
+  buttons<span>:</span> PhotoSwipeDefaultUI<span>.</span>ShareButtonData<span>[</span><span>]</span><span>;</span>
+<span>}</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br></div></div><p>国际化配置。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>指南</title>
+      <link>https://vuepress-theme-hope.github.io/v2/photo-swipe/zh/guide.html</link>
+      <guid>https://vuepress-theme-hope.github.io/v2/photo-swipe/zh/guide.html</guid>
+      <source url="https://vuepress-theme-hope.github.io/v2/photo-swipe/rss.xml">指南</source>
+      <description>&amp;lt;p&amp;gt;此插件会使页面正文内的图片在点击时进入浏览模式浏览。&amp;lt;/p&amp;gt;
+</description>
+      <content:encoded><![CDATA[<p>此插件会使页面正文内的图片在点击时进入浏览模式浏览。</p>
+
+<h2 id="浏览模式" tabindex="-1"> 浏览模式</h2>
+<p>在浏览模式中，你可以:</p>
+<ul>
+<li>左右滑动按顺序浏览页面内其他的图片</li>
+<li>查看图片的描述</li>
+<li>对图片进行缩放</li>
+<li>全屏浏览图片</li>
+<li>下载图片</li>
+<li>分享图片</li>
+</ul>
+<div><p>提示</p>
+<ul>
+<li>除了点击右上角的 &quot;×&quot; 退出浏览模式外，在上下滚动超过一定距离后，会自动退出图片浏览模式</li>
+<li>在移动端，或使用 PC 触控板，你可以使用平移、缩放手势在浏览模式中平移、缩放图片</li>
+</ul>
+</div>
+<h2 id="演示" tabindex="-1"> 演示</h2>
+<p><img src="/logo.png" alt="Logo1">
+<img src="/logo.png" alt="Logo2">
+<img src="/logo.png" alt="Logo3"></p>
+]]></content:encoded>
+      <enclosure url="https://vuepress-theme-hope.github.io/v2/photo-swipe/logo.png" type="image/png"/>
+    </item>
+  </channel>
+</rss>

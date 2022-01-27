@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+  <id>https://vuepress-theme-hope.github.io/v2/reading-time/</id>
+  <title/>
+  <updated>2022-01-27T08:51:23.145Z</updated>
+  <generator>vuepress-plugin-feed2</generator>
+  <link rel="self" href="https://vuepress-theme-hope.github.io/v2/reading-time/atom.xml"/>
+  <link rel="alternate" href="https://vuepress-theme-hope.github.io/v2/reading-time/"/>
+  <entry>
+    <title type="html">Home</title>
+    <id>https://vuepress-theme-hope.github.io/v2/reading-time/</id>
+    <link href="https://vuepress-theme-hope.github.io/v2/reading-time/"/>
+    <updated>2022-01-27T08:53:01.683Z</updated>
+    <content type="html"><![CDATA[<p>This plugin will inject expect reading time and word count statistics into the page object.</p>
+<p>Will automatically inject <code>readingTime</code> into the page object:</p>
+<div><pre><code><span>interface</span> <span>ReadingTime</span> <span>{</span>
+  <span>/** Expect reading minute */</span>
+  minutes<span>:</span> <span>number</span><span>;</span>
+  <span>/** Words count */</span>
+  words<span>:</span> <span>number</span><span>;</span>
+<span>}</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="how-to-use" tabindex="-1"> How to use</h2>
+<h3 id="install" tabindex="-1"> Install</h3>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-reading-time2
+</code></pre><div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D vuepress-plugin-reading-time2
+</code></pre><div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h3 id="usage" tabindex="-1"> Usage</h3>
+<CodeGroup>
+<CodeGroupItem title="ts">
+<div><pre><code><span>// .vuepress/config.ts</span>
+<span>import</span> <span>{</span> readingTime <span>}</span> <span>from</span> <span>"vuepress-plugin-reading-time2"</span><span>;</span>
+
+<span>export</span> <span>default</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>readingTime</span><span>(</span><span>{</span>
+      <span>// your options</span>
+    <span>}</span><span>)</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="js">
+<div><pre><code><span>// .vuepress/config.js</span>
+<span>const</span> <span>{</span> readingTime <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"vuepress-plugin-reading-time2"</span><span>)</span><span>;</span>
+
+module<span>.</span>exports <span>=</span> <span>{</span>
+  <span>plugins</span><span>:</span> <span>[</span>
+    <span>readingTime</span><span>(</span><span>{</span>
+      <span>// your options</span>
+    <span>}</span><span>)</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h2 id="plugin-options" tabindex="-1"> Plugin options</h2>
+<h3 id="wordperminute" tabindex="-1"> wordPerminute</h3>
+<ul>
+<li>Type: <code>number</code></li>
+<li>Default: <code>300</code></li>
+</ul>
+<p>Reading speed (words per minute)</p>
+<h3 id="locales" tabindex="-1"> locales</h3>
+<div><pre><code><span>interface</span> <span>ReadingTimeLocaleData</span> <span>{</span>
+  <span>/**
+   * Word template, `$word` will be automatically replaced by actual words
+   */</span>
+  word<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * Text for less than one minute
+   */</span>
+  less1Minute<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * Time template
+   */</span>
+  time<span>:</span> <span>string</span><span>;</span>
+<span>}</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div><p>Locales config.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title type="html">主页</title>
+    <id>https://vuepress-theme-hope.github.io/v2/reading-time/zh/</id>
+    <link href="https://vuepress-theme-hope.github.io/v2/reading-time/zh/"/>
+    <updated>2022-01-27T08:53:01.854Z</updated>
+    <content type="html"><![CDATA[<p>这个插件将会向 page 对象注入预计阅读时间与字数统计。</p>
+<p>会自动向 page 对象注入 <code>readingTime</code>:</p>
+<div><pre><code><span>interface</span> <span>ReadingTime</span> <span>{</span>
+  <span>/** 分钟数 */</span>
+  minutes<span>:</span> <span>number</span><span>;</span>
+  <span>/** 字数 */</span>
+  words<span>:</span> <span>number</span><span>;</span>
+<span>}</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="使用插件" tabindex="-1"> 使用插件</h2>
+<h3 id="安装" tabindex="-1"> 安装</h3>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-reading-time2
+</code></pre><div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D vuepress-plugin-reading-time2
+</code></pre><div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h3 id="使用" tabindex="-1"> 使用</h3>
+<CodeGroup>
+<CodeGroupItem title="ts">
+<div><pre><code><span>// .vuepress/config.ts</span>
+<span>export</span> <span>default</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>[</span>
+      <span>"@mr-hope/reading-time"</span><span>,</span>
+      <span>{</span>
+        <span>// 配置选项</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="js">
+<div><pre><code><span>// .vuepress/config.js</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  <span>plugins</span><span>:</span> <span>[</span>
+    <span>[</span>
+      <span>"@mr-hope/reading-time"</span><span>,</span>
+      <span>{</span>
+        <span>// 你的选项</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h2 id="插件选项" tabindex="-1"> 插件选项</h2>
+<h3 id="wordperminute" tabindex="-1"> wordPerminute</h3>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: <code>300</code></li>
+</ul>
+<p>每分钟阅读字数</p>
+<h3 id="locales" tabindex="-1"> locales</h3>
+<div><pre><code><span>interface</span> <span>ReadingTimeLocaleData</span> <span>{</span>
+  <span>/**
+   * 字数模板，模板中 `$word` 会被自动替换为字数
+   */</span>
+  word<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * 小于一分钟文字
+   */</span>
+  less1Minute<span>:</span> <span>string</span><span>;</span>
+
+  <span>/**
+   * 时间模板
+   */</span>
+  time<span>:</span> <span>string</span><span>;</span>
+<span>}</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div><p>国际化配置。</p>
+]]></content>
+  </entry>
+</feed>
