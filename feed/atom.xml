@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
   <id>https://vuepress-theme-hope.github.io/v2/feed/</id>
   <title/>
-  <updated>2022-01-27T09:07:48.690Z</updated>
+  <updated>2022-01-27T13:26:23.390Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/v2/feed/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/v2/feed/"/>
@@ -10,7 +10,7 @@
     <title type="html">Home</title>
     <id>https://vuepress-theme-hope.github.io/v2/feed/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/feed/"/>
-    <updated>2022-01-27T09:09:15.162Z</updated>
+    <updated>2022-01-27T13:27:55.842Z</updated>
     <content type="html"><![CDATA[<h2 id="how-to-use" tabindex="-1"> How to use</h2>
 <h3 id="install" tabindex="-1"> Install</h3>
 <CodeGroup>
@@ -54,7 +54,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Guide</title>
     <id>https://vuepress-theme-hope.github.io/v2/feed/guide.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/feed/guide.html"/>
-    <updated>2022-01-27T09:09:15.163Z</updated>
+    <updated>2022-01-27T13:27:55.843Z</updated>
     <summary type="html"><![CDATA[<h2 id="usage" tabindex="-1"> Usage</h2>
 <p><code>vuepress-plugin-feed2</code> plugin will automatically generate feed in the following three formats for you:</p>
 <ul>
@@ -251,7 +251,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Plugin Config</title>
     <id>https://vuepress-theme-hope.github.io/v2/feed/config/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/feed/config/"/>
-    <updated>2022-01-27T09:09:15.163Z</updated>
+    <updated>2022-01-27T13:27:55.856Z</updated>
     <content type="html"><![CDATA[<h2 id="hostname" tabindex="-1"> hostname</h2>
 <ul>
 <li>Type: <code>string</code></li>
@@ -328,7 +328,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Channel Config</title>
     <id>https://vuepress-theme-hope.github.io/v2/feed/config/channel.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/feed/config/channel.html"/>
-    <updated>2022-01-27T09:09:15.163Z</updated>
+    <updated>2022-01-27T13:27:55.857Z</updated>
     <content type="html"><![CDATA[<p>The channel option is used to config the feed channel. The configurable options and default value are as follows:</p>
 <h2 id="channel-title" tabindex="-1"> channel.title</h2>
 <ul>
@@ -453,7 +453,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Item Config</title>
     <id>https://vuepress-theme-hope.github.io/v2/feed/config/item.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/feed/config/item.html"/>
-    <updated>2022-01-27T09:09:15.163Z</updated>
+    <updated>2022-01-27T13:27:55.857Z</updated>
     <content type="html"><![CDATA[<p>You can control the generation of each feed item individually by configuring the frontmatter of each page.</p>
 <p>By default, all articles will be added to the feed stream. To remove a specific page from the feed, you can set <code>feed.enable</code> to <code>false</code> in frontmatter.</p>
 <h2 id="frontmatter-options" tabindex="-1"> FrontMatter options</h2>
@@ -744,7 +744,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">主页</title>
     <id>https://vuepress-theme-hope.github.io/v2/feed/zh/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/feed/zh/"/>
-    <updated>2022-01-27T09:09:15.163Z</updated>
+    <updated>2022-01-27T13:27:55.857Z</updated>
     <content type="html"><![CDATA[<h2 id="使用插件" tabindex="-1"> 使用插件</h2>
 <h3 id="安装" tabindex="-1"> 安装</h3>
 <CodeGroup>
@@ -788,7 +788,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">指南</title>
     <id>https://vuepress-theme-hope.github.io/v2/feed/zh/guide.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/feed/zh/guide.html"/>
-    <updated>2022-01-27T09:09:15.186Z</updated>
+    <updated>2022-01-27T13:27:55.858Z</updated>
     <summary type="html"><![CDATA[<h2 id="使用" tabindex="-1"> 使用</h2>
 <p><code>vuepress-plugin-feed2</code> 插件会自动为你生成以下三种格式的 feed 文件:</p>
 <ul>
@@ -994,7 +994,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">插件配置</title>
     <id>https://vuepress-theme-hope.github.io/v2/feed/zh/config/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/feed/zh/config/"/>
-    <updated>2022-01-27T09:09:15.186Z</updated>
+    <updated>2022-01-27T13:27:55.858Z</updated>
     <content type="html"><![CDATA[<h2 id="hostname" tabindex="-1"> hostname</h2>
 <ul>
 <li>类型: <code>string</code></li>
@@ -1071,7 +1071,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">频道设置</title>
     <id>https://vuepress-theme-hope.github.io/v2/feed/zh/config/channel.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/feed/zh/config/channel.html"/>
-    <updated>2022-01-27T09:09:15.186Z</updated>
+    <updated>2022-01-27T13:27:55.858Z</updated>
     <content type="html"><![CDATA[<p><code>channel</code> 选项用于配置 feed 的频道。可以配置的选项与默认值如下:</p>
 <h2 id="channel-title" tabindex="-1"> channel.title</h2>
 <ul>
@@ -1183,7 +1183,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">项目设置</title>
     <id>https://vuepress-theme-hope.github.io/v2/feed/zh/config/item.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/feed/zh/config/item.html"/>
-    <updated>2022-01-27T09:09:15.186Z</updated>
+    <updated>2022-01-27T13:27:55.858Z</updated>
     <content type="html"><![CDATA[<p>你可以通过配置每个页面的 frontmatter，来对每个 Feed 项目生成进行单独的控制。</p>
 <p>默认情况下，所有文章均会被添加至 feed 流。如果你想在 feed 中移除特定页面，你可以在 frontmatter 中设置 <code>feed.enable</code> 为 <code>false</code></p>
 <h2 id="frontmatter-选项" tabindex="-1"> FrontMatter 选项</h2>
