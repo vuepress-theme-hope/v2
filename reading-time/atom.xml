@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
   <id>https://vuepress-theme-hope.github.io/v2/reading-time/</id>
   <title/>
-  <updated>2022-01-27T13:26:23.500Z</updated>
+  <updated>2022-01-27T13:39:46.835Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/v2/reading-time/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/v2/reading-time/"/>
@@ -10,7 +10,7 @@
     <title type="html">Home</title>
     <id>https://vuepress-theme-hope.github.io/v2/reading-time/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/reading-time/"/>
-    <updated>2022-01-27T13:27:46.127Z</updated>
+    <updated>2022-01-27T13:41:22.996Z</updated>
     <content type="html"><![CDATA[<p>This plugin will inject expect reading time and word count statistics into the page object.</p>
 <p>Will automatically inject <code>readingTime</code> into the page object:</p>
 <div><pre><code><span>interface</span> <span>ReadingTime</span> <span>{</span>
@@ -87,7 +87,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">主页</title>
     <id>https://vuepress-theme-hope.github.io/v2/reading-time/zh/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/reading-time/zh/"/>
-    <updated>2022-01-27T13:27:46.207Z</updated>
+    <updated>2022-01-27T13:41:23.105Z</updated>
     <content type="html"><![CDATA[<p>这个插件将会向 page 对象注入预计阅读时间与字数统计。</p>
 <p>会自动向 page 对象注入 <code>readingTime</code>:</p>
 <div><pre><code><span>interface</span> <span>ReadingTime</span> <span>{</span>
