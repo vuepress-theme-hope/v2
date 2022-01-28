@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
   <id>https://vuepress-theme-hope.github.io/v2/copy-code/</id>
   <title/>
-  <updated>2022-01-28T11:07:13.412Z</updated>
+  <updated>2022-01-28T11:21:25.102Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/v2/copy-code/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/v2/copy-code/"/>
@@ -10,7 +10,7 @@
     <title type="html">Home</title>
     <id>https://vuepress-theme-hope.github.io/v2/copy-code/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/copy-code/"/>
-    <updated>2022-01-28T11:08:43.457Z</updated>
+    <updated>2022-01-28T11:22:49.096Z</updated>
     <content type="html"><![CDATA[<h2 id="how-to-use" tabindex="-1"> How to use</h2>
 <h3 id="install" tabindex="-1"> Install</h3>
 <CodeGroup>
@@ -54,7 +54,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Plugin Options</title>
     <id>https://vuepress-theme-hope.github.io/v2/copy-code/config.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/copy-code/config.html"/>
-    <updated>2022-01-28T11:08:43.541Z</updated>
+    <updated>2022-01-28T11:22:49.181Z</updated>
     <content type="html"><![CDATA[<h2 id="selector" tabindex="-1"> selector</h2>
 <ul>
 <li>Type: <code>string | string[]</code></li>
@@ -92,7 +92,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Guide</title>
     <id>https://vuepress-theme-hope.github.io/v2/copy-code/guide.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/copy-code/guide.html"/>
-    <updated>2022-01-28T11:08:43.541Z</updated>
+    <updated>2022-01-28T11:22:49.181Z</updated>
     <content type="html"><![CDATA[<h2 id="usage" tabindex="-1"> Usage</h2>
 <p>This plugin will add a copy button to the bottom right corner of each code block.</p>
 <p>By default, the button is only displayed on desktop mode. To display this button on mobile devices, set <code>showInMobile</code> to <code>true</code>.</p>
@@ -130,7 +130,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">主页</title>
     <id>https://vuepress-theme-hope.github.io/v2/copy-code/zh/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/copy-code/zh/"/>
-    <updated>2022-01-28T11:08:43.550Z</updated>
+    <updated>2022-01-28T11:22:49.181Z</updated>
     <content type="html"><![CDATA[<h2 id="使用插件" tabindex="-1"> 使用插件</h2>
 <h3 id="安装" tabindex="-1"> 安装</h3>
 <CodeGroup>
@@ -174,7 +174,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">插件选项</title>
     <id>https://vuepress-theme-hope.github.io/v2/copy-code/zh/config.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/copy-code/zh/config.html"/>
-    <updated>2022-01-28T11:08:43.550Z</updated>
+    <updated>2022-01-28T11:22:49.181Z</updated>
     <content type="html"><![CDATA[<h2 id="selector" tabindex="-1"> selector</h2>
 <ul>
 <li>类型: <code>string | string[]</code></li>
@@ -212,7 +212,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">指南</title>
     <id>https://vuepress-theme-hope.github.io/v2/copy-code/zh/guide.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/copy-code/zh/guide.html"/>
-    <updated>2022-01-28T11:08:43.550Z</updated>
+    <updated>2022-01-28T11:22:49.181Z</updated>
     <content type="html"><![CDATA[<h2 id="使用" tabindex="-1"> 使用</h2>
 <p>此插件会自动添加复制按钮到每个代码块的右下角。</p>
 <p>默认情况下，按钮仅在桌面模式显示，如果你需要在移动端展示这个按钮，请将 <code>showInMobile</code> 设置为 <code>true</code>。</p>
