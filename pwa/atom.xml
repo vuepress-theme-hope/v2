@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
   <id>https://vuepress-theme-hope.github.io/v2/pwa/</id>
   <title/>
-  <updated>2022-01-29T13:43:11.513Z</updated>
+  <updated>2022-01-29T18:04:40.983Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/v2/pwa/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/v2/pwa/"/>
@@ -10,7 +10,7 @@
     <title type="html">Home</title>
     <id>https://vuepress-theme-hope.github.io/v2/pwa/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/pwa/"/>
-    <updated>2022-01-29T13:44:47.853Z</updated>
+    <updated>2022-01-29T18:06:15.084Z</updated>
     <content type="html"><![CDATA[<p>This plugin will turn on Progressive Web App Support.</p>
 <h2 id="how-to-use" tabindex="-1"> How to use</h2>
 <h3 id="install" tabindex="-1"> Install</h3>
@@ -55,7 +55,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Config</title>
     <id>https://vuepress-theme-hope.github.io/v2/pwa/config.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/pwa/config.html"/>
-    <updated>2022-01-29T13:44:47.853Z</updated>
+    <updated>2022-01-29T18:06:15.084Z</updated>
     <content type="html"><![CDATA[<h2 id="showinstall" tabindex="-1"> showInstall</h2>
 <ul>
 <li>Type: <code>boolean</code></li>
@@ -259,7 +259,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Guide</title>
     <id>https://vuepress-theme-hope.github.io/v2/pwa/guide.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/pwa/guide.html"/>
-    <updated>2022-01-29T13:44:47.857Z</updated>
+    <updated>2022-01-29T18:06:15.086Z</updated>
     <summary type="html"><![CDATA[<p>The plugin brings enhanced PWA support to VuePress [^pwa-intro].</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>The plugin brings enhanced PWA support to VuePress <sup></sup>.</p>
@@ -356,7 +356,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 </tr>
 </tbody>
 </table>
-<p>For complete configuration items, please see <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/pwa/src/types/manifest.d.ts" target="_blank" rel="noopener noreferrer">Manifest Type Definition File</a></p>
+<p>For complete configuration items, please see <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/main/packages/pwa/src/shared/manifest.d.ts" target="_blank" rel="noopener noreferrer">Manifest Type Definition File</a></p>
 <h3 id="manual-configuration" tabindex="-1"> Manual configuration</h3>
 <p>You can manually specify the contents of the manifest in the <code>manifest</code> option.</p>
 <div><p>Priority</p>
@@ -428,7 +428,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">主页</title>
     <id>https://vuepress-theme-hope.github.io/v2/pwa/zh/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/pwa/zh/"/>
-    <updated>2022-01-29T13:44:47.857Z</updated>
+    <updated>2022-01-29T18:06:15.086Z</updated>
     <content type="html"><![CDATA[<p>渐进式网页应用 (Progressive Web App) 支持。</p>
 <h2 id="使用插件" tabindex="-1"> 使用插件</h2>
 <h3 id="安装" tabindex="-1"> 安装</h3>
@@ -473,7 +473,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">配置</title>
     <id>https://vuepress-theme-hope.github.io/v2/pwa/zh/config.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/pwa/zh/config.html"/>
-    <updated>2022-01-29T13:44:47.858Z</updated>
+    <updated>2022-01-29T18:06:15.086Z</updated>
     <content type="html"><![CDATA[<h2 id="showinstall" tabindex="-1"> showInstall</h2>
 <ul>
 <li>类型: <code>boolean</code></li>
@@ -680,7 +680,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">指南</title>
     <id>https://vuepress-theme-hope.github.io/v2/pwa/zh/guide.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/pwa/zh/guide.html"/>
-    <updated>2022-01-29T13:44:47.878Z</updated>
+    <updated>2022-01-29T18:06:15.119Z</updated>
     <summary type="html"><![CDATA[<p>插件为 VuePress 带来了增强的 PWA 支持[^pwa-intro]。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>插件为 VuePress 带来了增强的 PWA 支持<sup></sup>。</p>
@@ -736,7 +736,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 | background_color            | <code>'#ffffff'</code>                                                                                            |
 | orientation                 | <code>'portrait-primary'</code>                                                                                   |
 | prefer_related_applications | <code>false</code>                                                                                                |</p>
-<p>完整的配置项详见 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/pwa/src/types/manifest.d.ts" target="_blank" rel="noopener noreferrer">Manifest 类型定义文件</a></p>
+<p>完整的配置项详见 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/main/packages/pwa/src/shared/manifest.d.ts" target="_blank" rel="noopener noreferrer">Manifest 类型定义文件</a></p>
 <h3 id="手动配置" tabindex="-1"> 手动配置</h3>
 <p>你可以在 <code>manifest</code> 选项中手动指定 manifest 的各项内容。</p>
 <div><p>优先级</p>

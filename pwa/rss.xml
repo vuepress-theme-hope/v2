@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/v2/pwa/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Sat, 29 Jan 2022 13:43:11 GMT</pubDate>
-    <lastBuildDate>Sat, 29 Jan 2022 13:43:11 GMT</lastBuildDate>
+    <pubDate>Sat, 29 Jan 2022 18:04:40 GMT</pubDate>
+    <lastBuildDate>Sat, 29 Jan 2022 18:04:40 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <item>
@@ -360,7 +360,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 </tr>
 </tbody>
 </table>
-<p>For complete configuration items, please see <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/pwa/src/types/manifest.d.ts" target="_blank" rel="noopener noreferrer">Manifest Type Definition File</a></p>
+<p>For complete configuration items, please see <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/main/packages/pwa/src/shared/manifest.d.ts" target="_blank" rel="noopener noreferrer">Manifest Type Definition File</a></p>
 <h3 id="manual-configuration" tabindex="-1"> Manual configuration</h3>
 <p>You can manually specify the contents of the manifest in the <code>manifest</code> option.</p>
 <div><p>Priority</p>
@@ -740,7 +740,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 | background_color            | <code>'#ffffff'</code>                                                                                            |
 | orientation                 | <code>'portrait-primary'</code>                                                                                   |
 | prefer_related_applications | <code>false</code>                                                                                                |</p>
-<p>完整的配置项详见 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/pwa/src/types/manifest.d.ts" target="_blank" rel="noopener noreferrer">Manifest 类型定义文件</a></p>
+<p>完整的配置项详见 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/main/packages/pwa/src/shared/manifest.d.ts" target="_blank" rel="noopener noreferrer">Manifest 类型定义文件</a></p>
 <h3 id="手动配置" tabindex="-1"> 手动配置</h3>
 <p>你可以在 <code>manifest</code> 选项中手动指定 manifest 的各项内容。</p>
 <div><p>优先级</p>
