@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
   <id>https://vuepress-theme-hope.github.io/v2/comment/</id>
   <title/>
-  <updated>2022-01-30T05:32:44.792Z</updated>
+  <updated>2022-01-30T16:11:00.814Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/v2/comment/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/v2/comment/"/>
@@ -10,7 +10,7 @@
     <title type="html">Home</title>
     <id>https://vuepress-theme-hope.github.io/v2/comment/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/comment/"/>
-    <updated>2022-01-30T05:34:25.265Z</updated>
+    <updated>2022-01-30T16:12:45.595Z</updated>
     <content type="html"><![CDATA[<h2 id="install" tabindex="-1"> Install</h2>
 <CodeGroup>
 <CodeGroupItem title="yarn">
@@ -53,7 +53,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">API Config</title>
     <id>https://vuepress-theme-hope.github.io/v2/comment/config/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/comment/config/"/>
-    <updated>2022-01-30T05:34:25.371Z</updated>
+    <updated>2022-01-30T16:12:45.703Z</updated>
     <content type="html"><![CDATA[<h2 id="type" tabindex="-1"> type</h2>
 <ul>
 <li>Type: <code>'valine' | 'vssue' | 'disable'</code></li>
@@ -85,7 +85,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Waline Config</title>
     <id>https://vuepress-theme-hope.github.io/v2/comment/config/waline.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/comment/config/waline.html"/>
-    <updated>2022-01-30T05:34:25.372Z</updated>
+    <updated>2022-01-30T16:12:45.704Z</updated>
     <content type="html"><![CDATA[<h2 id="serverurl" tabindex="-1"> serverURL</h2>
 <ul>
 <li>Type: <code>string</code></li>
@@ -263,7 +263,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Guide</title>
     <id>https://vuepress-theme-hope.github.io/v2/comment/guide/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/comment/guide/"/>
-    <updated>2022-01-30T05:34:25.372Z</updated>
+    <updated>2022-01-30T16:12:45.704Z</updated>
     <content type="html"><![CDATA[<p>This plugin register <code>&lt;CommentService /&gt;</code> comonent globally.</p>
 <p>We recommended you to insert the comment component (<code>&lt;CommentService /&gt;</code>) after the <code>&lt;PageNav /&gt;</code> component.</p>
 <p>By default, <code>&lt;CommentService /&gt;</code> component is enabled globally. You can disable it locally by setting <code>comment: false</code> in page frontmatter.</p>
@@ -277,7 +277,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Waline</title>
     <id>https://vuepress-theme-hope.github.io/v2/comment/guide/waline.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/comment/guide/waline.html"/>
-    <updated>2022-01-30T05:34:25.399Z</updated>
+    <updated>2022-01-30T16:12:45.705Z</updated>
     <summary type="html"><![CDATA[<p>Welcome to Waline. In just a few steps, you can enable Waline to provide comments and pageviews on your website.</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>Welcome to Waline. In just a few steps, you can enable Waline to provide comments and pageviews on your website.</p>
@@ -352,7 +352,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">主页</title>
     <id>https://vuepress-theme-hope.github.io/v2/comment/zh/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/comment/zh/"/>
-    <updated>2022-01-30T05:34:25.399Z</updated>
+    <updated>2022-01-30T16:12:45.705Z</updated>
     <content type="html"><![CDATA[<h2 id="安装" tabindex="-1"> 安装</h2>
 <CodeGroup>
 <CodeGroupItem title="yarn">
@@ -395,7 +395,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">插件选项</title>
     <id>https://vuepress-theme-hope.github.io/v2/comment/zh/config/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/comment/zh/config/"/>
-    <updated>2022-01-30T05:34:25.399Z</updated>
+    <updated>2022-01-30T16:12:45.705Z</updated>
     <content type="html"><![CDATA[<h2 id="type" tabindex="-1"> type</h2>
 <ul>
 <li>类型: <code>'valine' | 'vssue' | 'disable'</code></li>
@@ -430,7 +430,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Waline 选项</title>
     <id>https://vuepress-theme-hope.github.io/v2/comment/zh/config/waline.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/comment/zh/config/waline.html"/>
-    <updated>2022-01-30T05:34:25.400Z</updated>
+    <updated>2022-01-30T16:12:45.705Z</updated>
     <content type="html"><![CDATA[<h2 id="serverurl" tabindex="-1"> serverURL</h2>
 <ul>
 <li>类型: <code>string</code></li>
@@ -608,7 +608,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">指南</title>
     <id>https://vuepress-theme-hope.github.io/v2/comment/zh/guide/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/comment/zh/guide/"/>
-    <updated>2022-01-30T05:34:25.400Z</updated>
+    <updated>2022-01-30T16:12:45.705Z</updated>
     <content type="html"><![CDATA[<p>此插件会全局注册评论组件 <code>&lt;CommentService /&gt;</code>。</p>
 <p>推荐将评论组件 (<code>&lt;CommentService /&gt;</code>) 插入在 <code>&lt;PageNav /&gt;</code> 组件后。</p>
 <p><code>&lt;CommentService /&gt;</code> 组件默认全局启用。你可以在特定页面的 frontmatter 中设置 <code>comment: false</code> 来局部禁用它。</p>
@@ -622,7 +622,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Waline</title>
     <id>https://vuepress-theme-hope.github.io/v2/comment/zh/guide/waline.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/comment/zh/guide/waline.html"/>
-    <updated>2022-01-30T05:34:25.417Z</updated>
+    <updated>2022-01-30T16:12:45.770Z</updated>
     <summary type="html"><![CDATA[<p>欢迎使用 Waline，只需几个步骤，你就可以在你的网站中启用 Waline 提供评论与浏览量服务。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>欢迎使用 Waline，只需几个步骤，你就可以在你的网站中启用 Waline 提供评论与浏览量服务。</p>

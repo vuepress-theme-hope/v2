@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
   <id>https://vuepress-theme-hope.github.io/v2/seo/</id>
   <title/>
-  <updated>2022-01-30T05:32:44.758Z</updated>
+  <updated>2022-01-30T16:11:00.884Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/v2/seo/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/v2/seo/"/>
@@ -10,7 +10,7 @@
     <title type="html">Home</title>
     <id>https://vuepress-theme-hope.github.io/v2/seo/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/seo/"/>
-    <updated>2022-01-30T05:34:27.202Z</updated>
+    <updated>2022-01-30T16:12:43.782Z</updated>
     <content type="html"><![CDATA[<h2 id="how-to-use" tabindex="-1"> How to use</h2>
 <h3 id="install" tabindex="-1"> Install</h3>
 <CodeGroup>
@@ -54,7 +54,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Config</title>
     <id>https://vuepress-theme-hope.github.io/v2/seo/config.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/seo/config.html"/>
-    <updated>2022-01-30T05:34:27.202Z</updated>
+    <updated>2022-01-30T16:12:43.782Z</updated>
     <content type="html"><![CDATA[<h2 id="plugin-options" tabindex="-1"> Plugin Options</h2>
 <h3 id="author" tabindex="-1"> author</h3>
 <ul>
@@ -113,7 +113,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Guide</title>
     <id>https://vuepress-theme-hope.github.io/v2/seo/guide.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/seo/guide.html"/>
-    <updated>2022-01-30T05:34:27.202Z</updated>
+    <updated>2022-01-30T16:12:43.782Z</updated>
     <content type="html"><![CDATA[<p>This plugin will inject the <code>&lt;meta&gt;</code> tag to enhance the search engine optimization of the site.</p>
 <h2 id="out-of-box" tabindex="-1"> Out of box</h2>
 <p>The plugin is used out of the box. Without any configuration, it will extract the corresponding information from the page content to generate the <code>&lt;meta&gt;</code> tag as much as possible.</p>
@@ -261,7 +261,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">主页</title>
     <id>https://vuepress-theme-hope.github.io/v2/seo/zh/</id>
     <link href="https://vuepress-theme-hope.github.io/v2/seo/zh/"/>
-    <updated>2022-01-30T05:34:27.202Z</updated>
+    <updated>2022-01-30T16:12:43.782Z</updated>
     <content type="html"><![CDATA[<h2 id="使用插件" tabindex="-1"> 使用插件</h2>
 <h3 id="安装" tabindex="-1"> 安装</h3>
 <CodeGroup>
@@ -305,7 +305,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">选项</title>
     <id>https://vuepress-theme-hope.github.io/v2/seo/zh/config.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/seo/zh/config.html"/>
-    <updated>2022-01-30T05:34:27.203Z</updated>
+    <updated>2022-01-30T16:12:43.783Z</updated>
     <content type="html"><![CDATA[<h2 id="插件选项" tabindex="-1"> 插件选项</h2>
 <h3 id="author" tabindex="-1"> author</h3>
 <ul>
@@ -364,7 +364,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">指南</title>
     <id>https://vuepress-theme-hope.github.io/v2/seo/zh/guide.html</id>
     <link href="https://vuepress-theme-hope.github.io/v2/seo/zh/guide.html"/>
-    <updated>2022-01-30T05:34:27.203Z</updated>
+    <updated>2022-01-30T16:12:43.783Z</updated>
     <content type="html"><![CDATA[<p>本插件会通过注入 <code>&lt;meta&gt;</code> 标签，以增强网站搜索引擎优化性。</p>
 <h2 id="开箱即用" tabindex="-1"> 开箱即用</h2>
 <p>插件开箱即用，在不做任何配置的情况下，会尽可能通过页面内容，提取对应的信息生成 <code>&lt;meta&gt;</code> 标签。</p>
