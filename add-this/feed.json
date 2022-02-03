@@ -9,7 +9,7 @@
       "url": "https://vuepress-theme-hope.github.io/v2/add-this/",
       "id": "https://vuepress-theme-hope.github.io/v2/add-this/",
       "content_html": "<h2 id=\"how-to-use\" tabindex=\"-1\"> How to use</h2>\n<h3 id=\"install\" tabindex=\"-1\"> Install</h3>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-add-this@next\n</code></pre><div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D vuepress-plugin-add-this@next\n</code></pre><div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h3 id=\"usage\" tabindex=\"-1\"> Usage</h3>\n<CodeGroup>\n<CodeGroupItem title=\"ts\">\n<div><pre><code><span>// .vuepress/config.ts</span>\n<span>import</span> <span>{</span> addThis <span>}</span> <span>from</span> <span>\"vuepress-plugin-add-this\"</span><span>;</span>\n\n<span>export</span> <span>default</span> <span>{</span>\n  plugins<span>:</span> <span>[</span><span>addThis</span><span>(</span><span>{</span> pubid<span>:</span> <span>\"your pubid\"</span> <span>}</span><span>)</span><span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"js\">\n<div><pre><code><span>// .vuepress/config.js</span>\n<span>const</span> <span>{</span> addThis <span>}</span> <span>=</span> <span>require</span><span>(</span><span>\"vuepress-plugin-add-this\"</span><span>)</span><span>;</span>\n\nmodule<span>.</span>exports <span>=</span> <span>{</span>\n  <span>plugins</span><span>:</span> <span>[</span><span>addThis</span><span>(</span><span>{</span> <span>pubid</span><span>:</span> <span>\"your pubid\"</span> <span>}</span><span>)</span><span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n",
-      "date_modified": "2022-01-31T04:44:51.950Z",
+      "date_modified": "2022-02-03T03:54:56.853Z",
       "authors": [],
       "tags": []
     },
@@ -18,7 +18,7 @@
       "url": "https://vuepress-theme-hope.github.io/v2/add-this/config.html",
       "id": "https://vuepress-theme-hope.github.io/v2/add-this/config.html",
       "content_html": "<h2 id=\"pubid\" tabindex=\"-1\"> pubid</h2>\n<ul>\n<li>Type: <code>string</code></li>\n<li>Required: true</li>\n</ul>\n<p>Pubid for Add this</p>\n",
-      "date_modified": "2022-01-31T04:44:52.095Z",
+      "date_modified": "2022-02-03T03:54:56.949Z",
       "authors": [],
       "tags": []
     },
@@ -27,7 +27,7 @@
       "url": "https://vuepress-theme-hope.github.io/v2/add-this/guide.html",
       "id": "https://vuepress-theme-hope.github.io/v2/add-this/guide.html",
       "content_html": "<h2 id=\"register\" tabindex=\"-1\"> Register</h2>\n<p>Go to <a href=\"https://www.addthis.com/register?next=/dashboard\" target=\"_blank\" rel=\"noopener noreferrer\">AddThis registration page</a> to register.</p>\n<div><p>Note</p>\n<p>If you already registered, ahead to <a href=\"https://www.addthis.com/login?next=/dashboard\" target=\"_blank\" rel=\"noopener noreferrer\">AddThis login page</a> to login.</p>\n</div>\n<h2 id=\"usage\" tabindex=\"-1\"> Usage</h2>\n<p>Go to <a href=\"https://www.addthis.com/dashboard#gallery/\" target=\"_blank\" rel=\"noopener noreferrer\">Tools page</a> then add and configure tools which you need.</p>\n<p>After you finished, enter the <a href=\"https://www.addthis.com/dashboard#get-the-code/\" target=\"_blank\" rel=\"noopener noreferrer\">Get The Code Page</a> to get your pubid from the code.</p>\n",
-      "date_modified": "2022-01-31T04:44:52.096Z",
+      "date_modified": "2022-02-03T03:54:56.954Z",
       "authors": [],
       "tags": []
     },
@@ -36,7 +36,7 @@
       "url": "https://vuepress-theme-hope.github.io/v2/add-this/zh/",
       "id": "https://vuepress-theme-hope.github.io/v2/add-this/zh/",
       "content_html": "<h2 id=\"使用插件\" tabindex=\"-1\"> 使用插件</h2>\n<h3 id=\"安装\" tabindex=\"-1\"> 安装</h3>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-add-this@next\n</code></pre><div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D vuepress-plugin-add-this@next\n</code></pre><div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h3 id=\"使用\" tabindex=\"-1\"> 使用</h3>\n<CodeGroup>\n<CodeGroupItem title=\"ts\">\n<div><pre><code><span>// .vuepress/config.ts</span>\n<span>import</span> <span>{</span> addThis <span>}</span> <span>from</span> <span>\"vuepress-plugin-add-this\"</span><span>;</span>\n\n<span>export</span> <span>default</span> <span>{</span>\n  plugins<span>:</span> <span>[</span><span>addThis</span><span>(</span><span>{</span> pubid<span>:</span> <span>\"你的 pubid\"</span> <span>}</span><span>)</span><span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"js\">\n<div><pre><code><span>// .vuepress/config.js</span>\n<span>const</span> <span>{</span> addThis <span>}</span> <span>=</span> <span>require</span><span>(</span><span>\"vuepress-plugin-add-this\"</span><span>)</span><span>;</span>\n\nmodule<span>.</span>exports <span>=</span> <span>{</span>\n  <span>plugins</span><span>:</span> <span>[</span><span>addThis</span><span>(</span><span>{</span> <span>pubid</span><span>:</span> <span>\"你的 pubid\"</span> <span>}</span><span>)</span><span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n",
-      "date_modified": "2022-01-31T04:44:52.096Z",
+      "date_modified": "2022-02-03T03:54:56.954Z",
       "authors": [],
       "tags": []
     },
@@ -45,7 +45,7 @@
       "url": "https://vuepress-theme-hope.github.io/v2/add-this/zh/config.html",
       "id": "https://vuepress-theme-hope.github.io/v2/add-this/zh/config.html",
       "content_html": "<h2 id=\"pubid\" tabindex=\"-1\"> pubid</h2>\n<ul>\n<li>类型: <code>string</code></li>\n<li>必填: 是</li>\n</ul>\n<p>Add this 的 pubid</p>\n",
-      "date_modified": "2022-01-31T04:44:52.096Z",
+      "date_modified": "2022-02-03T03:54:56.954Z",
       "authors": [],
       "tags": []
     },
@@ -54,7 +54,7 @@
       "url": "https://vuepress-theme-hope.github.io/v2/add-this/zh/guide.html",
       "id": "https://vuepress-theme-hope.github.io/v2/add-this/zh/guide.html",
       "content_html": "<h2 id=\"注册\" tabindex=\"-1\"> 注册</h2>\n<p>前往 <a href=\"https://www.addthis.com/register?next=/dashboard\" target=\"_blank\" rel=\"noopener noreferrer\">Add this 注册页面</a> 注册</p>\n<div><p>注</p>\n<p>如果你已注册，前往 <a href=\"https://www.addthis.com/login?next=/dashboard\" target=\"_blank\" rel=\"noopener noreferrer\">Add this 登录页面</a> 登录账号。</p>\n</div>\n<div><p>提示</p>\n<p>该页面有 reCAPTCHA 认证，可能需要科学上网</p>\n</div>\n<h2 id=\"使用\" tabindex=\"-1\"> 使用</h2>\n<p>进入 <a href=\"https://www.addthis.com/dashboard#gallery/\" target=\"_blank\" rel=\"noopener noreferrer\">工具页面</a> 添加你所需要的工具，并进行合理的配置。</p>\n<p>在配置完成后，请进入 <a href=\"https://www.addthis.com/dashboard#get-the-code/\" target=\"_blank\" rel=\"noopener noreferrer\">获取代码页面</a>，即可代码中获得你的 pubid。</p>\n",
-      "date_modified": "2022-01-31T04:44:52.096Z",
+      "date_modified": "2022-02-03T03:54:56.954Z",
       "authors": [],
       "tags": []
     }
