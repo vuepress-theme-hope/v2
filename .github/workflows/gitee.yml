@@ -1,0 +1,30 @@
+name: Deploy Gitee Docs
+
+on:
+  push:
+    branches:
+      - gh-pages
+
+jobs:
+  deploy-gitee:
+    name: Deploy V2 docs to Gitee
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      - name: Install Prettier
+        run: yarn install -g prettier
+
+      - name: Lint project
+        run: yarn prettier --write **/*.html
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gitee
+          token: ${{ secrets.ACCESS_TOKEN }}
