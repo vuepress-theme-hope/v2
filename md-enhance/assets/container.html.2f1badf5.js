@@ -1,0 +1,126 @@
+import{_ as c}from"./plugin-vue_export-helper.21dcd24c.js";import{r as t,o,c as d,a as r,w as s,b as n,d as p,e as u}from"./app.c92924a3.js";const v={},m=n("p",null,"The plugin adds tip, note, info, warning, danger and detail container.",-1),b=n("h2",{id:"config",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#config","aria-hidden":"true"},"#"),p(" Config")],-1),k=n("div",{class:"language-text ext-text line-numbers-mode"},[n("pre",{class:"language-text"},[n("code",null,`// .vuepress/config.ts
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+
+export default {
+  plugins: [
+    mdEnhancePlugin({
+      // Enable container
+      container: true,
+    }),
+  ],
+};
+`)]),n("div",{class:"highlight-lines"},[n("br"),n("br"),n("br"),n("br"),n("br"),n("br"),n("br"),n("div",{class:"highlight-line"},"\xA0"),n("br"),n("br"),n("br")]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),g=n("div",{class:"language-text ext-text line-numbers-mode"},[n("pre",{class:"language-text"},[n("code",null,`// .vuepress/config.js
+const { mdEnhancePlugin } = require("vuepress-plugin-md-enhance");
+
+module.exports = {
+  plugins: [
+    mdEnhancePlugin({
+      // Enable container
+      container: true,
+    }),
+  ],
+};
+`)]),n("div",{class:"highlight-lines"},[n("br"),n("br"),n("br"),n("br"),n("br"),n("br"),n("br"),n("div",{class:"highlight-line"},"\xA0"),n("br"),n("br"),n("br")]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),h=u(`<h2 id="demo" tabindex="-1"><a class="header-anchor" href="#demo" aria-hidden="true">#</a> Demo</h2><div class="custom-container info"><p class="custom-container-title">Info</p><p>Information container</p></div><div class="custom-container note"><p class="custom-container-title">Note</p><p>Note container</p></div><div class="custom-container tip"><p class="custom-container-title">Tips</p><p>Tip container</p></div><div class="custom-container warning"><p class="custom-container-title">Note</p><p>Warning container</p></div><div class="custom-container danger"><p class="custom-container-title">Warning</p><p>Dangerous container</p></div><details class="custom-container details"><summary>Details</summary><p>Details container</p></details><div class="custom-container info"><p class="custom-container-title">Custom Title</p><p>A custom information container with <code>code</code>, <a href="#markdown">link</a>.</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div><div class="custom-container note"><p class="custom-container-title">Custom Title</p><p>A custom note container with <code>code</code>, <a href="#markdown">link</a>.</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div><div class="custom-container tip"><p class="custom-container-title">Custom Title</p><p>A custom tip container with <code>code</code>, <a href="#markdown">link</a>.</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div><div class="custom-container warning"><p class="custom-container-title">Custom Title</p><p>A custom warning container with <code>code</code>, <a href="#markdown">link</a>.</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div><div class="custom-container danger"><p class="custom-container-title">Custom Title</p><p>A custom danger container with <code>code</code>, <a href="#markdown">link</a>.</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div><details class="custom-container details"><summary>Custom Title</summary><p>A custom details container with <code>code</code>, <a href="#markdown">link</a>.</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></details><div class="custom-container info"><p class="custom-container-title">Custom info</p></div><div class="custom-container note"><p class="custom-container-title">Custom note</p></div><div class="custom-container tip"><p class="custom-container-title">Custom tip</p></div><div class="custom-container warning"><p class="custom-container-title">Custom warning</p></div><div class="custom-container danger"><p class="custom-container-title">Custom danger</p></div><div class="language-markdown ext-md line-numbers-mode"><pre class="language-markdown"><code>::: info
+Information container
+:::
+
+::: note
+Note container
+:::
+
+::: tip
+Tip container
+:::
+
+::: warning
+Warning container
+:::
+
+::: danger
+Dangerous container
+:::
+
+::: details
+Details container
+:::
+
+::: info Custom Title
+
+A custom information container with <span class="token code-snippet code keyword">\`code\`</span>, <span class="token url">[<span class="token content">link</span>](<span class="token url">#markdown</span>)</span>.
+
+<span class="token code"><span class="token punctuation">\`\`\`</span><span class="token code-language">js</span>
+<span class="token code-block language-js"><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">\`\`\`</span></span>
+
+:::
+
+::: note Custom Title
+A custom note container with <span class="token code-snippet code keyword">\`code\`</span>, <span class="token url">[<span class="token content">link</span>](<span class="token url">#markdown</span>)</span>.
+
+<span class="token code"><span class="token punctuation">\`\`\`</span><span class="token code-language">js</span>
+<span class="token code-block language-js"><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">\`\`\`</span></span>
+
+:::
+
+::: tip Custom Title
+
+A custom tip container with <span class="token code-snippet code keyword">\`code\`</span>, <span class="token url">[<span class="token content">link</span>](<span class="token url">#markdown</span>)</span>.
+
+<span class="token code"><span class="token punctuation">\`\`\`</span><span class="token code-language">js</span>
+<span class="token code-block language-js"><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">\`\`\`</span></span>
+
+:::
+
+::: warning Custom Title
+
+A custom warning container with <span class="token code-snippet code keyword">\`code\`</span>, <span class="token url">[<span class="token content">link</span>](<span class="token url">#markdown</span>)</span>.
+
+<span class="token code"><span class="token punctuation">\`\`\`</span><span class="token code-language">js</span>
+<span class="token code-block language-js"><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">\`\`\`</span></span>
+
+:::
+
+::: danger Custom Title
+
+A custom danger container with <span class="token code-snippet code keyword">\`code\`</span>, <span class="token url">[<span class="token content">link</span>](<span class="token url">#markdown</span>)</span>.
+
+<span class="token code"><span class="token punctuation">\`\`\`</span><span class="token code-language">js</span>
+<span class="token code-block language-js"><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">\`\`\`</span></span>
+
+:::
+
+::: details Custom Title
+
+A custom details container with <span class="token code-snippet code keyword">\`code\`</span>, <span class="token url">[<span class="token content">link</span>](<span class="token url">#markdown</span>)</span>.
+
+<span class="token code"><span class="token punctuation">\`\`\`</span><span class="token code-language">js</span>
+<span class="token code-block language-js"><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span></span>
+<span class="token punctuation">\`\`\`</span></span>
+
+:::
+
+::: info Custom info
+:::
+
+::: note Custom note
+:::
+
+::: tip Custom tip
+:::
+
+::: warning Custom warning
+:::
+
+::: danger Custom danger
+:::
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,19);function w(f,j){const a=t("CodeTabs");return o(),d("div",null,[m,b,r(a,{data:[{title:"TS"},{title:"JS"}],"tab-id":"language"},{tab0:s(({title:e,value:i,isActive:l})=>[k]),tab1:s(({title:e,value:i,isActive:l})=>[g]),_:1}),h])}var x=c(v,[["render",w],["__file","container.html.vue"]]);export{x as default};
