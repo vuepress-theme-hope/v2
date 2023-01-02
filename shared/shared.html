@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-beta.60" />
+    <meta name="theme" content="VuePress Theme Hope" />
+    <meta property="og:url" content="https://vuepress-theme-hope-v2.netlify.app/shared/shared.html"><meta property="og:site_name" content="VuePress shared"><meta property="og:title" content="Shared"><meta property="og:description" content="The following functions are available on both node and client. Props Related Encode/decode and zip/unzip props. This is useful in markdown plugins when you want to encode string..."><meta property="og:type" content="article"><meta property="og:updated_time" content="2022-12-14T13:24:44.000Z"><meta property="og:locale" content="en-US"><meta property="og:locale:alternate" content="zh-CN"><meta property="article:modified_time" content="2022-12-14T13:24:44.000Z"><link rel="canonical" href="https://vuepress-theme-hope.github.io/v2/seo/shared.html"><link rel="alternate" hreflang="zh-cn" href="https://vuepress-theme-hope-v2.netlify.app/shared/zh/shared.html"><link rel="icon" href="/shared/favicon.ico"><link rel="icon" href="/shared/assets/icon/chrome-mask-512.png" type="image/png" sizes="512x512"><link rel="icon" href="/shared/assets/icon/chrome-mask-192.png" type="image/png" sizes="192x192"><link rel="icon" href="/shared/assets/icon/chrome-512.png" type="image/png" sizes="512x512"><link rel="icon" href="/shared/assets/icon/chrome-192.png" type="image/png" sizes="192x192"><link rel="manifest" href="/shared/manifest.webmanifest" crossorigin="use-credentials"><meta name="theme-color" content="#46bd87"><link rel="apple-touch-icon" href="/shared/assets/icon/apple-icon-152.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="msapplication-TileImage" content="/shared/assets/icon/ms-icon-144.png"><meta name="msapplication-TileColor" content="#ffffff"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"><title>Shared | VuePress shared</title><meta name="description" content="The following functions are available on both node and client. Props Related Encode/decode and zip/unzip props. This is useful in markdown plugins when you want to encode string...">
+    <style>
+      :root {
+        --bg-color: #fff;
+      }
+
+      html[data-theme="dark"] {
+        --bg-color: #1d2025;
+      }
+
+      html,
+      body {
+        background: var(--bg-color);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.querySelector("html").setAttribute("data-theme", "dark");
+      }
+    </script>
+    <link rel="preload" href="/shared/assets/style-15a9cacc.css" as="style"><link rel="stylesheet" href="/shared/assets/style-15a9cacc.css">
+    <link rel="modulepreload" href="/shared/assets/app-7bb57367.js"><link rel="modulepreload" href="/shared/assets/framework-eb069dea.js"><link rel="modulepreload" href="/shared/assets/shared.html-986fe1e3.js"><link rel="modulepreload" href="/shared/assets/shared.html-4f3dc8ba.js">
+  </head>
+  <body>
+    <div id="app"><!--[--><!--[--><!--[--><span tabindex="-1"></span><a href="#main-content" class="skip-link sr-only">Skip to main content</a><!--]--><div class="theme-container no-sidebar has-toc"><!--[--><!--[--><header class="navbar"><div class="navbar-left"><button class="toggle-sidebar-button" title="Toggle Sidebar"><span class="icon"></span></button><!--[--><!----><!--]--><a href="/shared/" class="brand"><img class="logo" src="/shared/logo.svg" alt="VuePress shared"><!----><span class="site-name hide-in-pad">VuePress shared</span></a><!--[--><!----><!--]--></div><div class="navbar-center"><!--[--><!----><!--]--><nav class="nav-links"><div class="nav-item hide-in-mobile"><a href="/shared/" class="nav-link" aria-label="Home"><span class="font-icon icon iconfont icon-home" style=""></span>Home<!----></a></div><div class="nav-item hide-in-mobile"><a aria-current="page" href="/shared/shared.html" class="router-link-active router-link-exact-active nav-link active" aria-label="Shared"><!---->Shared<!----></a></div><div class="nav-item hide-in-mobile"><div class="dropdown-wrapper"><button class="dropdown-title" type="button" aria-label="Node"><span class="title"><!---->Node</span><span class="arrow"></span><ul class="nav-dropdown"><li class="dropdown-item"><a href="/shared/node/bundler.html" class="nav-link" aria-label="Bundler Related"><!---->Bundler Related<!----></a></li><li class="dropdown-item"><a href="/shared/node/content.html" class="nav-link" aria-label="Content Related"><!---->Content Related<!----></a></li></ul></button></div></div><div class="nav-item hide-in-mobile"><a href="/shared/client.html" class="nav-link" aria-label="Client"><!---->Client<!----></a></div></nav><!--[--><!----><!--]--></div><div class="navbar-right"><!--[--><!----><!--]--><div class="nav-item"><div class="dropdown-wrapper i18n-dropdown"><button class="dropdown-title" type="button" aria-label="Select language"><!--[--><svg xmlns="http://www.w3.org/2000/svg" class="icon i18n-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="i18n icon" style="width:1rem;height:1rem;vertical-align:middle;"><path d="M379.392 460.8 494.08 575.488l-42.496 102.4L307.2 532.48 138.24 701.44l-71.68-72.704L234.496 460.8l-45.056-45.056c-27.136-27.136-51.2-66.56-66.56-108.544h112.64c7.68 14.336 16.896 27.136 26.112 35.84l45.568 46.08 45.056-45.056C382.976 312.32 409.6 247.808 409.6 204.8H0V102.4h256V0h102.4v102.4h256v102.4H512c0 70.144-37.888 161.28-87.04 210.944L378.88 460.8zM576 870.4 512 1024H409.6l256-614.4H768l256 614.4H921.6l-64-153.6H576zM618.496 768h196.608L716.8 532.48 618.496 768z"></path></svg><!--]--><span class="arrow"></span><ul class="nav-dropdown"><li class="dropdown-item"><a aria-current="page" href="/shared/shared.html" class="router-link-active router-link-exact-active nav-link active" aria-label="English"><!---->English<!----></a></li><li class="dropdown-item"><a href="/shared/zh/shared.html" class="nav-link" aria-label="简体中文"><!---->简体中文<!----></a></li></ul></button></div></div><div class="nav-item"><a class="repo-link" href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/tree/main/packages/seo2/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" class="icon github-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="github icon" style="width:1.25rem;height:1.25rem;vertical-align:middle;"><path d="M511.957 21.333C241.024 21.333 21.333 240.981 21.333 512c0 216.832 140.544 400.725 335.574 465.664 24.49 4.395 32.256-10.07 32.256-23.083 0-11.69.256-44.245 0-85.205-136.448 29.61-164.736-64.64-164.736-64.64-22.315-56.704-54.4-71.765-54.4-71.765-44.587-30.464 3.285-29.824 3.285-29.824 49.195 3.413 75.179 50.517 75.179 50.517 43.776 75.008 114.816 53.333 142.762 40.79 4.523-31.66 17.152-53.377 31.19-65.537-108.971-12.458-223.488-54.485-223.488-242.602 0-53.547 19.114-97.323 50.517-131.67-5.035-12.33-21.93-62.293 4.779-129.834 0 0 41.258-13.184 134.912 50.346a469.803 469.803 0 0 1 122.88-16.554c41.642.213 83.626 5.632 122.88 16.554 93.653-63.488 134.784-50.346 134.784-50.346 26.752 67.541 9.898 117.504 4.864 129.834 31.402 34.347 50.474 78.123 50.474 131.67 0 188.586-114.73 230.016-224.042 242.09 17.578 15.232 33.578 44.672 33.578 90.454v135.85c0 13.142 7.936 27.606 32.854 22.87C862.25 912.597 1002.667 728.747 1002.667 512c0-271.019-219.648-490.667-490.71-490.667z"></path></svg></a></div><div class="nav-item hide-in-mobile"><button id="appearance-switch"><svg xmlns="http://www.w3.org/2000/svg" class="icon auto-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="auto icon" style="display:block;"><path d="M512 992C246.92 992 32 777.08 32 512S246.92 32 512 32s480 214.92 480 480-214.92 480-480 480zm0-840c-198.78 0-360 161.22-360 360 0 198.84 161.22 360 360 360s360-161.16 360-360c0-198.78-161.22-360-360-360zm0 660V212c165.72 0 300 134.34 300 300 0 165.72-134.28 300-300 300z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon dark-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="dark icon" style="display:none;"><path d="M524.8 938.667h-4.267a439.893 439.893 0 0 1-313.173-134.4 446.293 446.293 0 0 1-11.093-597.334A432.213 432.213 0 0 1 366.933 90.027a42.667 42.667 0 0 1 45.227 9.386 42.667 42.667 0 0 1 10.24 42.667 358.4 358.4 0 0 0 82.773 375.893 361.387 361.387 0 0 0 376.747 82.774 42.667 42.667 0 0 1 54.187 55.04 433.493 433.493 0 0 1-99.84 154.88 438.613 438.613 0 0 1-311.467 128z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon light-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="light icon" style="display:none;"><path d="M952 552h-80a40 40 0 0 1 0-80h80a40 40 0 0 1 0 80zM801.88 280.08a41 41 0 0 1-57.96-57.96l57.96-58a41.04 41.04 0 0 1 58 58l-58 57.96zM512 752a240 240 0 1 1 0-480 240 240 0 0 1 0 480zm0-560a40 40 0 0 1-40-40V72a40 40 0 0 1 80 0v80a40 40 0 0 1-40 40zm-289.88 88.08-58-57.96a41.04 41.04 0 0 1 58-58l57.96 58a41 41 0 0 1-57.96 57.96zM192 512a40 40 0 0 1-40 40H72a40 40 0 0 1 0-80h80a40 40 0 0 1 40 40zm30.12 231.92a41 41 0 0 1 57.96 57.96l-57.96 58a41.04 41.04 0 0 1-58-58l58-57.96zM512 832a40 40 0 0 1 40 40v80a40 40 0 0 1-80 0v-80a40 40 0 0 1 40-40zm289.88-88.08 58 57.96a41.04 41.04 0 0 1-58 58l-57.96-58a41 41 0 0 1 57.96-57.96z"></path></svg></button></div><div id="docsearch-container"></div><!--[--><!----><!--]--><button class="toggle-navbar-button" aria-label="Toggle Navbar" aria-expanded="false" aria-controls="nav-screen"><span class="button-container"><span class="button-top"></span><span class="button-middle"></span><span class="button-bottom"></span></span></button></div></header><!----><!--]--><!----><div class="toggle-sidebar-wrapper"><span class="arrow left"></span></div><aside class="sidebar"><!--[--><!----><!--]--><ul class="sidebar-links"></ul><!--[--><!----><!--]--></aside><!--[--><main class="page" id="main-content"><!--[--><!----><nav class="breadcrumb disable"></nav><div class="page-title"><h1><!---->Shared</h1><div class="page-info"><!----><!----><span class="reading-time-info" aria-label="Reading Time⌛" data-balloon-pos="down"><svg xmlns="http://www.w3.org/2000/svg" class="icon timer-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="timer icon"><path d="M799.387 122.15c4.402-2.978 7.38-7.897 7.38-13.463v-1.165c0-8.933-7.38-16.312-16.312-16.312H256.33c-8.933 0-16.311 7.38-16.311 16.312v1.165c0 5.825 2.977 10.874 7.637 13.592 4.143 194.44 97.22 354.963 220.201 392.763-122.204 37.542-214.893 196.511-220.2 389.397-4.661 5.049-7.638 11.651-7.638 19.03v5.825h566.49v-5.825c0-7.379-2.849-13.981-7.509-18.9-5.049-193.016-97.867-351.985-220.2-389.527 123.24-37.67 216.446-198.453 220.588-392.892zM531.16 450.445v352.632c117.674 1.553 211.787 40.778 211.787 88.676H304.097c0-48.286 95.149-87.382 213.728-88.676V450.445c-93.077-3.107-167.901-81.297-167.901-177.093 0-8.803 6.99-15.793 15.793-15.793 8.803 0 15.794 6.99 15.794 15.793 0 80.261 63.69 145.635 142.01 145.635s142.011-65.374 142.011-145.635c0-8.803 6.99-15.793 15.794-15.793s15.793 6.99 15.793 15.793c0 95.019-73.789 172.82-165.96 177.093z"></path></svg><span>About 4 min</span><meta property="timeRequired" content="PT4M"></span></div><hr></div><div class="toc-place-holder"><aside id="toc"><div class="toc-header">On This Page</div><div class="toc-wrapper"><ul class="toc-list"><!--[--><li class="toc-item"><a aria-current="page" href="/shared/shared.html#props-related" class="router-link-active router-link-exact-active toc-link level2">Props Related</a></li><!----><!--]--><!--[--><li class="toc-item"><a aria-current="page" href="/shared/shared.html#utils" class="router-link-active router-link-exact-active toc-link level2">Utils</a></li><ul class="toc-list"><!--[--><li class="toc-item"><a aria-current="page" href="/shared/shared.html#deepmerge" class="router-link-active router-link-exact-active toc-link level3">deepMerge</a></li><!----><!--]--><!--[--><li class="toc-item"><a aria-current="page" href="/shared/shared.html#getdate" class="router-link-active router-link-exact-active toc-link level3">getDate</a></li><!----><!--]--><!--[--><li class="toc-item"><a aria-current="page" href="/shared/shared.html#comparedate" class="router-link-active router-link-exact-active toc-link level3">compareDate</a></li><!----><!--]--><!--[--><li class="toc-item"><a aria-current="page" href="/shared/shared.html#isurl" class="router-link-active router-link-exact-active toc-link level3">isUrl</a></li><!----><!--]--><!--[--><li class="toc-item"><a aria-current="page" href="/shared/shared.html#isabsoluteurl" class="router-link-active router-link-exact-active toc-link level3">isAbsoluteUrl</a></li><!----><!--]--></ul><!--]--></ul></div></aside></div><!----><div class="theme-hope-content"><p>The following functions are available on both node and client.</p><h2 id="props-related" tabindex="-1"><a class="header-anchor" href="#props-related" aria-hidden="true">#</a> Props Related</h2><p>Encode/decode and zip/unzip props.</p><p>This is useful in markdown plugins when you want to encode string content and pass it to the component through props.</p><p>You may simply achieve this with <code>encodeURIComponent</code> and <code>decodeURIComponent</code>, but it can be very large if the content contains lots of special characters.</p><p>So we provide <code>utoa</code> and <code>atou</code> to zip and encode content.</p><div class="language-typescript" data-ext="ts"><pre class="language-typescript"><code><span class="token keyword">export</span> <span class="token keyword">const</span> utoa<span class="token operator">:</span> <span class="token punctuation">(</span>data<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> level<span class="token operator">:</span> DeflateOptions<span class="token punctuation">[</span><span class="token string">&quot;level&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">atou</span><span class="token operator">:</span> <span class="token punctuation">(</span>base64<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+</code></pre></div><details class="hint-container details"><summary>Details</summary><div class="language-typescript line-numbers-mode" data-ext="ts"><pre class="language-typescript"><code><span class="token keyword">const</span> content <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+{
+  &quot;type&quot;: &quot;bar&quot;,
+  &quot;data&quot;: {
+    &quot;labels&quot;: [&quot;Red&quot;, &quot;Blue&quot;, &quot;Yellow&quot;, &quot;Green&quot;, &quot;Purple&quot;, &quot;Orange&quot;],
+    &quot;datasets&quot;: [
+      {
+        &quot;label&quot;: &quot;# of Votes&quot;,
+        &quot;data&quot;: [12, 19, 3, 5, 2, 3],
+        &quot;backgroundColor&quot;: [
+          &quot;rgba(255, 99, 132, 0.2)&quot;,
+          &quot;rgba(54, 162, 235, 0.2)&quot;,
+          &quot;rgba(255, 206, 86, 0.2)&quot;,
+          &quot;rgba(75, 192, 192, 0.2)&quot;,
+          &quot;rgba(153, 102, 255, 0.2)&quot;,
+          &quot;rgba(255, 159, 64, 0.2)&quot;
+        ],
+        &quot;borderColor&quot;: [
+          &quot;rgba(255, 99, 132, 1)&quot;,
+          &quot;rgba(54, 162, 235, 1)&quot;,
+          &quot;rgba(255, 206, 86, 1)&quot;,
+          &quot;rgba(75, 192, 192, 1)&quot;,
+          &quot;rgba(153, 102, 255, 1)&quot;,
+          &quot;rgba(255, 159, 64, 1)&quot;
+        ],
+        &quot;borderWidth&quot;: 1
+      }
+    ]
+  },
+  &quot;options&quot;: {
+    &quot;scales&quot;: {
+      &quot;y&quot;: {
+        &quot;beginAtZero&quot;: true
+      }
+    }
+  }
+}
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> prop <span class="token operator">=</span> <span class="token function">utoa</span><span class="token punctuation">(</span>content<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &quot;eJyNUsFOwzAMve8rrHABKZqWlg5WxAE4cARxAMHEIV1NmQhNlaaCCe3fcdKtW0sLWGpjxy/v+UV512mlcIyfhTa2hHP4GgHYVYExsEQaxqlMpZWxbwAomaAqY5izO0wZB3apKnTrIyqlP1x2bRBzl9xWplC+eWNkniF7dmw1X4nWsfgaNtwNP2kfgH6Be22x9CPUUQ8yFwEHMeMQcog4UBFuiF0kcvGWGV3l6ZVW2uw0XDCTJfIwiOjYjAhESIcn4+BoT2MLio6pP6V+EBJ6AOSZgsmUwyl9A6ATwoiZn3lYTkTkRkycnuP8TU9ENPqUxuuA9i9BmxTNPy9A/G2/F9I23wtpW++FdIwPKzW2W5Afph+WqX2NQWz313XicT7XhV3qnB5f/ejKhVTYVACrXUqUmC3zC/uERsdgTYUdVr/Qb302+gZxe7S/&quot;</span>
+
+<span class="token function">atou</span><span class="token punctuation">(</span>prop<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// will be the original content</span>
+
+<span class="token comment">// if you use `encodeURIComponent`, it will be much longer</span>
+<span class="token function">encodeURIComponent</span><span class="token punctuation">(</span>content<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#39;%0A%7B%0A%20%20%22type%22%3A%20%22bar%22%2C%0A%20%20%22data%22%3A%20%7B%0A%20%20%20%20%22labels%22%3A%20%5B%22Red%22%2C%20%22Blue%22%2C%20%22Yellow%22%2C%20%22Green%22%2C%20%22Purple%22%2C%20%22Orange%22%5D%2C%0A%20%20%20%20%22datasets%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22label%22%3A%20%22%23%20of%20Votes%22%2C%0A%20%20%20%20%20%20%20%20%22data%22%3A%20%5B12%2C%2019%2C%203%2C%205%2C%202%2C%203%5D%2C%0A%20%20%20%20%20%20%20%20%22backgroundColor%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22rgba(255%2C%2099%2C%20132%2C%200.2)%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22rgba(54%2C%20162%2C%20235%2C%200.2)%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22rgba(255%2C%20206%2C%2086%2C%200.2)%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22rgba(75%2C%20192%2C%20192%2C%200.2)%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22rgba(153%2C%20102%2C%20255%2C%200.2)%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22rgba(255%2C%20159%2C%2064%2C%200.2)%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22borderColor%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22rgba(255%2C%2099%2C%20132%2C%201)%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22rgba(54%2C%20162%2C%20235%2C%201)%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22rgba(255%2C%20206%2C%2086%2C%201)%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22rgba(75%2C%20192%2C%20192%2C%201)%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22rgba(153%2C%20102%2C%20255%2C%201)%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22rgba(255%2C%20159%2C%2064%2C%201)%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22borderWidth%22%3A%201%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%20%20%7D%2C%0A%20%20%22options%22%3A%20%7B%0A%20%20%20%20%22scales%22%3A%20%7B%0A%20%20%20%20%20%20%22y%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22beginAtZero%22%3A%20true%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&#39;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></details><h2 id="utils" tabindex="-1"><a class="header-anchor" href="#utils" aria-hidden="true">#</a> Utils</h2><h3 id="deepmerge" tabindex="-1"><a class="header-anchor" href="#deepmerge" aria-hidden="true">#</a> deepMerge</h3><p>Deep merge objects to the first one, useful for merging user options with default options.</p><div class="language-typescript line-numbers-mode" data-ext="ts"><pre class="language-typescript"><code><span class="token doc-comment comment">/**
+ * Deep merge objects to the first one
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> deepMerge<span class="token operator">:</span> <span class="token operator">&lt;</span>
+  <span class="token constant">T</span> <span class="token keyword">extends</span> <span class="token class-name">IAnyObject</span><span class="token punctuation">,</span>
+  <span class="token constant">U</span> <span class="token keyword">extends</span> <span class="token class-name">IAnyObject</span> <span class="token operator">=</span> <span class="token constant">T</span><span class="token punctuation">,</span>
+  <span class="token constant">V</span> <span class="token keyword">extends</span> <span class="token class-name">Partial<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span></span> <span class="token operator">&amp;</span> Partial<span class="token operator">&lt;</span><span class="token constant">U</span><span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token constant">T</span> <span class="token operator">&amp;</span> <span class="token constant">U</span>
+<span class="token operator">&gt;</span><span class="token punctuation">(</span>
+  originObject<span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">,</span>
+  <span class="token operator">...</span>overrideObjects<span class="token operator">:</span> <span class="token constant">U</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token constant">V</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><details class="hint-container details"><summary>Example</summary><div class="language-typescript line-numbers-mode" data-ext="ts"><pre class="language-typescript"><code><span class="token comment">// or vuepress-shared/client</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> deepMerge <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vuepress-shared/node&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> defaultOptions <span class="token operator">=</span> <span class="token punctuation">{</span>
+  optionA<span class="token operator">:</span> <span class="token punctuation">{</span>
+    optionA1<span class="token operator">:</span> <span class="token string">&quot;defaultOptionA1&quot;</span><span class="token punctuation">,</span>
+    optionA2<span class="token operator">:</span> <span class="token string">&quot;defaultOptionA2&quot;</span><span class="token punctuation">,</span>
+    optionA3<span class="token operator">:</span> <span class="token string">&quot;defaultOptionA3&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  optionB<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  optionC<span class="token operator">:</span> <span class="token string">&quot;optionC&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> userOptions <span class="token operator">=</span> <span class="token punctuation">{</span>
+  optionA<span class="token operator">:</span> <span class="token punctuation">{</span>
+    optionA1<span class="token operator">:</span> <span class="token string">&quot;optionA1&quot;</span><span class="token punctuation">,</span>
+    optionA2<span class="token operator">:</span> <span class="token string">&quot;optionA2&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  optionB<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token function">deepMerge</span><span class="token punctuation">(</span>defaultOptions<span class="token punctuation">,</span> userOptions<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// {</span>
+<span class="token comment">//   optionA: {</span>
+<span class="token comment">//     optionA1: &quot;optionA1&quot;,</span>
+<span class="token comment">//     optionA2: &quot;optionA2&quot;,</span>
+<span class="token comment">//     optionA3: &quot;defaultOptionA3&quot;,</span>
+<span class="token comment">//   },</span>
+<span class="token comment">//   optionB: false,</span>
+<span class="token comment">//   optionC: &quot;optionC&quot;,</span>
+<span class="token comment">// }</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></details><h3 id="getdate" tabindex="-1"><a class="header-anchor" href="#getdate" aria-hidden="true">#</a> getDate</h3><p>Get date info from a string or Date object.</p><div class="hint-container note"><p class="hint-container-title">Note</p><p>The function returns null instead of throw error when the date is invalid.</p></div><div class="language-typescript line-numbers-mode" data-ext="ts"><pre class="language-typescript"><code><span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">DateDetail</span> <span class="token punctuation">{</span>
+  year<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span> <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+  month<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span> <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+  day<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span> <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+  hour<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span> <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+  minute<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span> <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+  second<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span> <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">DateInfo</span> <span class="token punctuation">{</span>
+  type<span class="token operator">:</span> <span class="token string">&quot;date&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;time&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;full&quot;</span><span class="token punctuation">;</span>
+  info<span class="token operator">:</span> DateDetail<span class="token punctuation">;</span>
+  value<span class="token operator">:</span> Date <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token doc-comment comment">/**
+ * Get Date info
+ *
+ * <span class="token keyword">@param</span> <span class="token parameter">date</span> Date or date info
+ * <span class="token keyword">@param</span> <span class="token parameter">timezone</span> (optional) date timezone
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">getDate</span><span class="token operator">:</span> <span class="token punctuation">(</span>
+  date<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">|</span> Date <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span>
+  timezone<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span>
+<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> DateInfo <span class="token operator">|</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><details class="hint-container details"><summary>Example</summary><div class="language-typescript line-numbers-mode" data-ext="ts"><pre class="language-typescript"><code><span class="token comment">// or vuepress-shared/client</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> getDate <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vuepress-shared/node&quot;</span><span class="token punctuation">;</span>
+
+<span class="token function">getDate</span><span class="token punctuation">(</span><span class="token string">&quot;2021-01-01 12:34:56&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// {</span>
+<span class="token comment">//   value: Date(&quot;2021-01-01 12:34:56&quot;),</span>
+<span class="token comment">//   info: {</span>
+<span class="token comment">//     year: 2021,</span>
+<span class="token comment">//     month: 1,</span>
+<span class="token comment">//     day: 1,</span>
+<span class="token comment">//     hour: 12,</span>
+<span class="token comment">//     minute: 34,</span>
+<span class="token comment">//     second: 56,</span>
+<span class="token comment">//   },</span>
+<span class="token comment">//   type: &quot;full&quot;,</span>
+<span class="token comment">// }</span>
+
+<span class="token function">getDate</span><span class="token punctuation">(</span><span class="token string">&quot;2021-01-01&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// {</span>
+<span class="token comment">//   value: Date(&quot;2021-01-01&quot;),</span>
+<span class="token comment">//   info: {</span>
+<span class="token comment">//     year: 2021,</span>
+<span class="token comment">//     month: 1,</span>
+<span class="token comment">//     day: 1,</span>
+<span class="token comment">//   },</span>
+<span class="token comment">//   type: &quot;date&quot;,</span>
+<span class="token comment">// }</span>
+
+<span class="token function">getDate</span><span class="token punctuation">(</span><span class="token string">&quot;12:34:56&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// {</span>
+<span class="token comment">//   value: undefined,</span>
+<span class="token comment">//   info: {</span>
+<span class="token comment">//     hour: 12,</span>
+<span class="token comment">//     minute: 34,</span>
+<span class="token comment">//     second: 56,</span>
+<span class="token comment">//   },</span>
+<span class="token comment">//   type: &quot;time&quot;,</span>
+<span class="token comment">// }</span>
+
+<span class="token comment">// if you are in UTC</span>
+<span class="token comment">// Asia/Shanghai is +8</span>
+<span class="token function">getDate</span><span class="token punctuation">(</span><span class="token string">&quot;12:34:56&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Asia/Shanghai&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// It will be 4AM in UTC</span>
+<span class="token comment">// {</span>
+<span class="token comment">//   value: undefined,</span>
+<span class="token comment">//   info: {</span>
+<span class="token comment">//     hour: 4,</span>
+<span class="token comment">//     minute: 34,</span>
+<span class="token comment">//     second: 56,</span>
+<span class="token comment">//   },</span>
+<span class="token comment">//   type: &quot;time&quot;,</span>
+<span class="token comment">// }</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></details><h3 id="comparedate" tabindex="-1"><a class="header-anchor" href="#comparedate" aria-hidden="true">#</a> compareDate</h3><p>Compare dates and sort them from latest to oldest.</p><p>Invalid date will appear at last.</p><div class="language-typescript" data-ext="ts"><pre class="language-typescript"><code><span class="token doc-comment comment">/**
+ * Recent date will returns positive value, so dates will be latest to oldest after sorting
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">compareDate</span><span class="token operator">:</span> <span class="token punctuation">(</span>
+  dateA<span class="token operator">:</span> Date <span class="token operator">|</span> <span class="token builtin">number</span> <span class="token operator">|</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span>
+  dateB<span class="token operator">:</span> Date <span class="token operator">|</span> <span class="token builtin">number</span> <span class="token operator">|</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token keyword">undefined</span>
+<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+</code></pre></div><details class="hint-container details"><summary>Example</summary><div class="language-typescript line-numbers-mode" data-ext="ts"><pre class="language-typescript"><code><span class="token comment">// or vuepress-shared/client</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> compareDate <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vuepress-shared/node&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> dates <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token string">&quot;2021-01-01&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;2022-04-05 08:00:00&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;04:38:45&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;19999&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;2022-03-08&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+dates<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span>compareDate<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// [</span>
+<span class="token comment">//   &quot;2022-04-05 08:00:00&quot;,</span>
+<span class="token comment">//   &quot;2022-03-08&quot;,</span>
+<span class="token comment">//   &quot;2021-01-01&quot;,</span>
+<span class="token comment">//   &quot;04:38:45&quot;,</span>
+<span class="token comment">//   &quot;19999&quot;,</span>
+<span class="token comment">// ];</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></details><h3 id="isurl" tabindex="-1"><a class="header-anchor" href="#isurl" aria-hidden="true">#</a> isUrl</h3><p>Whether a variable is a valid url.</p><div class="language-typescript" data-ext="ts"><pre class="language-typescript"><code><span class="token doc-comment comment">/**
+ * Whether a variable is a valid url
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">isUrl</span><span class="token operator">:</span> <span class="token punctuation">(</span>url<span class="token operator">:</span> <span class="token builtin">unknown</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="isabsoluteurl" tabindex="-1"><a class="header-anchor" href="#isabsoluteurl" aria-hidden="true">#</a> isAbsoluteUrl</h3><p>Whether a variable is a valid absolute url.</p><div class="language-typescript" data-ext="ts"><pre class="language-typescript"><code><span class="token doc-comment comment">/**
+ * Whether a variable is a valid absolute url
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">isAbsoluteUrl</span><span class="token operator">:</span> <span class="token punctuation">(</span>url<span class="token operator">:</span> <span class="token builtin">unknown</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
+</code></pre></div></div><!----><footer class="page-meta"><div class="meta-item edit-link"><a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/edit/main/docs/seo2/src/shared.md" rel="noopener noreferrer" target="_blank" aria-label="Edit this page" class="nav-link label"><!--[--><svg xmlns="http://www.w3.org/2000/svg" class="icon edit-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="edit icon"><path d="M430.818 653.65a60.46 60.46 0 0 1-50.96-93.281l71.69-114.012 7.773-10.365L816.038 80.138A60.46 60.46 0 0 1 859.225 62a60.46 60.46 0 0 1 43.186 18.138l43.186 43.186a60.46 60.46 0 0 1 0 86.373L588.879 565.55l-8.637 8.637-117.466 68.234a60.46 60.46 0 0 1-31.958 11.229z"></path><path d="M728.802 962H252.891A190.883 190.883 0 0 1 62.008 771.98V296.934a190.883 190.883 0 0 1 190.883-192.61h267.754a60.46 60.46 0 0 1 0 120.92H252.891a69.962 69.962 0 0 0-69.098 69.099V771.98a69.962 69.962 0 0 0 69.098 69.098h475.911A69.962 69.962 0 0 0 797.9 771.98V503.363a60.46 60.46 0 1 1 120.922 0V771.98A190.883 190.883 0 0 1 728.802 962z"></path></svg><!--]-->Edit this page<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!----></a></div><div class="meta-item update-time"><span class="label">Last update: </span><!----></div><div class="meta-item contributors"><span class="label">Contributors: </span><!--[--><!--[--><span class="contributor" title="email: mister-hope@outlook.com">Mr.Hope</span><!--]--><!--]--></div></footer><!----><div class="giscus-wrapper input-top" style="display:block;"><div style="text-align:center">Loading...</div></div><!----><!--]--></main><!--]--><footer class="footer-wrapper"><div class="footer">MIT Licensed | Copyright © 2019-present Mr.Hope</div><!----></footer><!--]--></div><!--]--><!----><!----><!--]--></div>
+    <script type="module" src="/shared/assets/app-7bb57367.js" defer></script>
+  </body>
+</html>

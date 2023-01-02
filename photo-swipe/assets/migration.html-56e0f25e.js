@@ -1,0 +1,1 @@
+import{_ as t,W as l,X as n,$ as e,a0 as o}from"./framework-ecf98296.js";const c={},s=e("ul",null,[e("li",null,[o("现在此插件使用 "),e("code",null,"photo-swipe"),o(" V5 版本。 V5 使用 ESM 重构，具有更小的大小。所以 "),e("code",null,"photo-swipe"),o(" 可接受的选项有所改变。")])],-1),a=[s];function _(r,i){return l(),n("div",null,a)}const u=t(c,[["render",_],["__file","migration.html.vue"]]);export{u as default};

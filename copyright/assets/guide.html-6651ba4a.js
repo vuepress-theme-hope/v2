@@ -1,0 +1,31 @@
+import{_ as p,W as c,X as i,a2 as l,$ as s,a0 as n,Y as e,Z as t,a1 as o,E as u}from"./framework-ecf98296.js";const r={},d=s("p",null,"此插件可以在访问者从你的站点复制内容时，自动追加版权信息，也可以禁止站点的复制或者选择。",-1),k=o('<h2 id="使用" tabindex="-1"><a class="header-anchor" href="#使用" aria-hidden="true">#</a> 使用</h2><p>此插件，默认全局禁用，你需要在需要的页面的 frontmatter 中设置 <code>copy: true</code> 手动开启。当然，你可以在插件选项中设置 <code>global: true</code> 让其全局生效，并在个别页面的 frontmatter 中设置 <code>copy: false</code> 禁用它。</p><p>处于不打扰用户的考虑，默认配置下，仅当用户复制字符长度不小于 <code>100</code> 时，才会触发追加版权信息，如果你希望改变这个触发值，请设置 <code>triggerWords</code>，同时该选项支持在 frontmatter 中通过 <code>copy.triggerWord</code> 单独设置。</p><h2 id="禁用复制和选择" tabindex="-1"><a class="header-anchor" href="#禁用复制和选择" aria-hidden="true">#</a> 禁用复制和选择</h2><ul><li>如果你不希望用户复制你的整个站点或特定页面文字，你可以在插件选项或在页面 frontmatter 中设置 <code>disableCopy</code> 来禁用复制，后者具有更高优先级。</li><li>如果你不希望用户选择你的整个站点或特定页面文字，你可以在插件选项或在页面 frontmatter 中设置 <code>disableSelection</code> 来禁用选择，后者具有更高优先级。</li></ul><h2 id="版权信息获取" tabindex="-1"><a class="header-anchor" href="#版权信息获取" aria-hidden="true">#</a> 版权信息获取</h2><p>你可以通过插件的 <code>author</code> 和 <code>license</code> 选项设置作者和协议信息。如果文档的不同部分拥有不同的作者和协议，你可以传入一个使用当前页面对象作为参数的函数 <code>(page: Page) =&gt; string</code> 返回相应信息。</p><h2 id="自定义版权信息文字" tabindex="-1"><a class="header-anchor" href="#自定义版权信息文字" aria-hidden="true">#</a> 自定义版权信息文字</h2>',8),v=s("code",null,"locales",-1),m=o(`<div class="language-typescript line-numbers-mode" data-ext="ts"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> defineUserConfig <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vuepress&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> searchProPlugin <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vuepress-plugin-search-pro&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineUserConfig</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  locales<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;/&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 这是一个支持的语言</span>
+      lang<span class="token operator">:</span> <span class="token string">&quot;zh-CN&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;/xx/&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 这是一个没有收到插件支持的语言</span>
+      lang<span class="token operator">:</span> <span class="token string">&quot;mm-NN&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token function">searchProPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      locales<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;/&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 覆盖链接文字</span>
+          link<span class="token operator">:</span> <span class="token string">&quot;原文发表于 :link&quot;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+        <span class="token string-property property">&quot;/xx/&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 在这里完整设置 \`mm-NN\` 的多语言配置</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,1);function h(b,g){const a=u("RouterLink");return c(),i("div",null,[d,l(" more "),k,s("p",null,[n("你可以通过插件的 "),v,n(" 选项新增特定语言的版权信息文字或修改已支持语言的版权信息文字，详见 "),e(a,{to:"/zh/config.html#locales"},{default:t(()=>[n("配置 → locales")]),_:1}),n("。")]),m,s("p",null,[n("具体的选项详见 "),e(a,{to:"/zh/config.html#locales"},{default:t(()=>[n("配置 → 多语言配置")]),_:1}),n("。")])])}const _=p(r,[["render",h],["__file","guide.html.vue"]]);export{_ as default};

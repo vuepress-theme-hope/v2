@@ -1,0 +1,6 @@
+import{_ as e,W as a,X as d,a2 as c}from"./framework-346270e9.js";const o={},r=c(`<h2 id="链接检查" tabindex="-1"><a class="header-anchor" href="#链接检查" aria-hidden="true">#</a> 链接检查</h2><p><code>vuepress-plugin-md-enhance</code> 默认在开发模式下检查你的 Markdown 链接。</p><p>你可以通过插件选项中的 <code>linkCheck</code> 自定义此功能，你可以选择 <code>&#39;always&#39;</code>、<code>&#39;never&#39;</code>、<code>&#39;dev&#39;</code> 和 <code>&#39;build&#39;</code>。</p><h2 id="gfm" tabindex="-1"><a class="header-anchor" href="#gfm" aria-hidden="true">#</a> GFM</h2><p>如果你的文档既在文档站点上提供又直接在 GitHub 上提供，我们提供了一个 <code>gfm</code> 选项来使你的 Markdown 行为与 GitHub 保持一致。</p><div class="hint-container note"><p class="hint-container-title">注</p><p>自定义容器在 <code>@vuepress/theme-default</code> 和 <code>vuepress-theme-hope</code> 中默认启用，但在 GitHub Markdown 预览中不可用。</p></div><h2 id="v-pre" tabindex="-1"><a class="header-anchor" href="#v-pre" aria-hidden="true">#</a> v-pre</h2><p>由于 VuePress2 已经在 <code>@vuepress/core</code> 中移除了 V1 的 v-pre 容器，插件提供了一个选项支持它。也就是你可以在下面的容器中使用任何 Mustache 语法。</p><div class="language-markdown" data-ext="md"><pre class="language-markdown"><code>::: v-pre
+
+{{ abc }}
+
+:::
+</code></pre></div>`,9),n=[r];function t(s,i){return a(),d("div",null,n)}const p=e(o,[["render",t],["__file","others.html.vue"]]);export{p as default};
