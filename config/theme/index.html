@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-US" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.31" />
+    <meta name="theme" content="VuePress Theme Hope 2.0.0-rc.110" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme="dark"] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode =
+        window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    </script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Theme Config","image":[""],"dateModified":"2024-06-04T08:13:50.000Z","author":[{"@type":"Person","name":"Mr.Hope","url":"https://mister-hope.com"}]}</script><meta property="og:url" content="https://vuepress-theme-hope.github.io/v2/config/theme/"><meta property="og:site_name" content="vuepress-theme-hope"><meta property="og:title" content="Theme Config"><meta property="og:description" content="Demo You can check theme docs' config."><meta property="og:type" content="article"><meta property="og:locale" content="en-US"><meta property="og:locale:alternate" content="zh-CN"><meta property="og:updated_time" content="2024-06-04T08:13:50.000Z"><meta property="article:tag" content="Theme Config"><meta property="article:modified_time" content="2024-06-04T08:13:50.000Z"><link rel="canonical" href="https://theme-hope.vuejs.press/config/theme/"><link rel="alternate" hreflang="zh-cn" href="https://vuepress-theme-hope.github.io/v2/zh/config/theme/"><link rel="alternate" type="application/atom+xml" href="https://vuepress-theme-hope.github.io/v2/atom.xml" title="vuepress-theme-hope Atom Feed"><link rel="alternate" type="application/json" href="https://vuepress-theme-hope.github.io/v2/feed.json" title="vuepress-theme-hope JSON Feed"><link rel="alternate" type="application/rss+xml" href="https://vuepress-theme-hope.github.io/v2/rss.xml" title="vuepress-theme-hope RSS Feed"><link rel="icon" href="https://theme-hope-assets.vuejs.press/icon/chrome-mask-512.png" type="image/png" sizes="512x512"><link rel="icon" href="https://theme-hope-assets.vuejs.press/icon/chrome-mask-192.png" type="image/png" sizes="512x512"><link rel="icon" href="https://theme-hope-assets.vuejs.press/icon/chrome-512.png" type="image/png" sizes="192x192"><link rel="icon" href="https://theme-hope-assets.vuejs.press/icon/chrome-192.png" type="image/png" sizes="192x192"><meta name="theme-color" content="#46bd87"><link rel="apple-touch-icon" href="https://theme-hope-assets.vuejs.press/icon/apple-icon-152.png"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="google-site-verification" content="qG3soux9jAKB4Q_DYf7yj1p5cEIuib6yG4zDhpmv2_E"><link rel="icon" href="/v2/favicon.ico"><title>Theme Config | vuepress-theme-hope</title><meta name="description" content="Demo You can check theme docs' config.">
+    <link rel="preload" href="/v2/assets/style-BbbH0kJ9.css" as="style"><link rel="stylesheet" href="/v2/assets/style-BbbH0kJ9.css">
+    
+    
+  </head>
+  <body>
+    <div id="app"><!----></div>
+    <script type="module" src="/v2/assets/app-DUdS3Amg.js" defer></script>
+  </body>
+</html>
