@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.31" />
+    <meta name="theme" content="VuePress Theme Hope 2.0.0-rc.110" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme="dark"] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode =
+        window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    </script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"主页","description":"安装 使用 从 V1 迁移 详见 。"}</script><meta property="og:url" content="https://vuepress-theme-hope.github.io/v2/md-enhance/zh/"><meta property="og:site_name" content="Markdown 增强"><meta property="og:title" content="主页"><meta property="og:description" content="安装 使用 从 V1 迁移 详见 。"><meta property="og:type" content="website"><meta property="og:locale" content="zh-CN"><meta property="og:locale:alternate" content="en-US"><meta property="og:updated_time" content="2026-09-28T12:45:00.000Z"><meta property="article:modified_time" content="2026-09-28T12:45:00.000Z"><link rel="canonical" href="https://plugin-md-enhance.vuejs.press/zh/"><link rel="alternate" hreflang="en-us" href="https://vuepress-theme-hope.github.io/v2/md-enhance/"><link rel="icon" href="https://theme-hope-assets.vuejs.press/icon/chrome-mask-512.png" type="image/png" sizes="512x512"><link rel="icon" href="https://theme-hope-assets.vuejs.press/icon/chrome-mask-192.png" type="image/png" sizes="512x512"><link rel="icon" href="https://theme-hope-assets.vuejs.press/icon/chrome-512.png" type="image/png" sizes="192x192"><link rel="icon" href="https://theme-hope-assets.vuejs.press/icon/chrome-192.png" type="image/png" sizes="192x192"><meta name="theme-color" content="#46bd87"><link rel="apple-touch-icon" href="https://theme-hope-assets.vuejs.press/icon/apple-icon-152.png"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/v2/md-enhance/favicon.ico"><title>主页 | Markdown 增强</title><meta name="description" content="安装 使用 从 V1 迁移 详见 。">
+    <link rel="preload" href="/v2/md-enhance/assets/style-CmYqKU6h.css" as="style"><link rel="stylesheet" href="/v2/md-enhance/assets/style-CmYqKU6h.css">
+    
+    
+  </head>
+  <body>
+    <div id="app"><!----></div>
+    <script type="module" src="/v2/md-enhance/assets/app-CXBBn61I.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+var e=`/v2/logo.png`;export{e as t};
